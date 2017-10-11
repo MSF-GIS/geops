@@ -1,3 +1,5 @@
+require('exports-loader');
+const webpack = require('webpack');
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -30,6 +32,14 @@ module.exports = {
     new CopyWebpackPlugin([{ from: 'public' }]),
     new HtmlWebpackPlugin({
       template: 'public/index.html'
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      /*Popper: ['popper.js', 'default'],*/
+      Collapse: "exports-loader?Collapse!bootstrap/js/dist/collapse",
+      Util: "exports-loader?Util!bootstrap/js/dist/util"
     })
   ],
   output: {

@@ -23,8 +23,14 @@ const firstState = {
 
 function route(handler) {
   const routeId = window.location.hash.replace('#', '');
-  const tempRoutes = routes.filter(r => r.id === routeId);
-  
+  const tempRoutes = routes.filter(r => !r.disabled)
+    .filter(r => r.id === routeId);  
+
+  if(routeId === '' || routeId === '#') {
+    handler.publish('ACTIONS', setCurrentTab('home'));
+    return;    
+  }
+
   if(tempRoutes < 1){
     handler.publish('ACTIONS', setCurrentTab('404'));
     return;
@@ -57,9 +63,9 @@ function main(initState, initVnode, app) {
   let state = initState;
 
   PubSub.subscribe('ACTIONS', update);
-  PubSub.publish('ACTIONS', { type: 'START' });
 
   window.onhashchange = route.bind(this, PubSub);
+  route(PubSub);
 }
 
 main(firstState, document.querySelector('#root'), app);

@@ -1,0 +1,50 @@
+.bg-dark {
+  background-color: rgba(209, 33, 33, 1) !important;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1.5rem;
+}
+
+.navbar-brand {
+  background-color: #fff;
+  padding: 0.8rem 1.2rem;
+}
+
+.navbar-brand img {
+  display: block;
+  height: 4rem;
+  width: auto;
+}
+
+a.nav-link {
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .8rem;
+  text-align: center;
+}
+
+a.nav-link.disabled {
+  pointer-events: none;
+}
+
+a.nav-link i.fa {
+  display: block;
+  font-size: 1.2rem; 
+}
+
+.navbar-expand-lg li.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-expand-lg li.nav-item.active {
+  position: relative;
+  top: .5rem;
+  background-color: rgba(242, 60, 53);
+}

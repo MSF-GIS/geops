@@ -47,4 +47,5 @@ a.nav-link i.fa {
   position: relative;
   top: .5rem;
   background-color: rgba(242, 60, 53);
+  z-index: 9999;
 }

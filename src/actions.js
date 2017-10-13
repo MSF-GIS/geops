@@ -6,3 +6,17 @@ export function setCurrentTab(tab) {
     payload: tab
   }
 };
+
+export function setLayerSwitherCollapsed(collapsed) {
+  return {
+    type: 'SET_LAYER_SWITCHER_COLLAPSED',
+    payload: collapsed
+  }
+};
+
+export function setLayerSwitherChecked(checked) {
+  return {
+    type: 'SET_LAYER_SWITCHER_CHECKED',
+    payload: checked
+  }
+};

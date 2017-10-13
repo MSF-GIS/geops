@@ -1,0 +1,27 @@
+#webmap {
+  width: 100%;
+  height: calc(100vh - 5.6rem);
+}
+
+.ol-control button {
+  background-color: rgba(209,33,33,.5);
+}
+
+.ol-control button:focus, .ol-control button:hover {
+  background-color: rgba(209,33,33,.7);
+}
+
+.ol-zoom {
+  top: .5rem;
+  right: .5rem;
+  left: unset;
+}
+
+.ol-control button {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.ol-attribution.ol-uncollapsible {
+  height: unset;
+}

@@ -18,7 +18,9 @@ const patch = init([
 ]);
 
 const firstState = {
-  currentTab: 'home'
+  currentTab: 'home',
+  layerSwitcherCollapsed: false,
+  layerSwitcherChecked: 'carto'
 };
 
 function route(handler) {
@@ -42,9 +44,15 @@ function route(handler) {
 function reduce(state, action) {
 
   switch (action.type) {
-    case 'SET_CURRENT_TAB' :
+    case 'SET_CURRENT_TAB':
       state.currentTab = action.payload;
       return state;
+    case 'SET_LAYER_SWITCHER_COLLAPSED':
+      state.layerSwitcherCollapsed = action.payload;
+      return state;
+    case 'SET_LAYER_SWITCHER_CHECKED':
+      state.layerSwitcherChecked = action.payload;
+      return state;     
   }
 
   return state;

@@ -20,3 +20,38 @@ export function setLayerSwitherChecked(checked) {
     payload: checked
   }
 };
+
+export function setPresences(presences) {
+  return {
+    type: 'SET_PRESENCES',
+    payload: presences
+  }
+};
+
+export function setProjects(projects) {
+  return {
+    type: 'SET_PROJECTS',
+    payload: projects
+  }
+};
+
+export function setMission(mission) {
+  return {
+    type: 'SET_MISSION',
+    payload: mission
+  }
+}
+
+export function setProject(project) {
+  return {
+    type: 'SET_PROJECT',
+    payload: project
+  }
+}
+
+export function setExtents(extents) {
+  return {
+    type: 'SET_EXTENTS',
+    payload: extents
+  }
+}

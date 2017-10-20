@@ -1,0 +1,3772 @@
+{
+ "displayFieldName": "name",
+ "fieldAliases": {
+  "objectid": "objectid",
+  "iso3": "iso3",
+  "pcode": "pcode",
+  "name": "name",
+  "gis_name": "gis_name",
+  "type": "type",
+  "source": "source",
+  "statut": "statut",
+  "editedby": "editedby",
+  "editdate": "editdate",
+  "globalid": "globalid",
+  "operational_center": "operational_center",
+  "project_code": "project_code",
+  "note": "note",
+  "cell": "cell",
+  "geo_precision": "geo_precision"
+ },
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 102100,
+  "latestWkid": 3857
+ },
+ "fields": [
+  {
+   "name": "objectid",
+   "type": "esriFieldTypeOID",
+   "alias": "objectid"
+  },
+  {
+   "name": "iso3",
+   "type": "esriFieldTypeString",
+   "alias": "iso3",
+   "length": 3
+  },
+  {
+   "name": "pcode",
+   "type": "esriFieldTypeString",
+   "alias": "pcode",
+   "length": 10
+  },
+  {
+   "name": "name",
+   "type": "esriFieldTypeString",
+   "alias": "name",
+   "length": 500
+  },
+  {
+   "name": "gis_name",
+   "type": "esriFieldTypeString",
+   "alias": "gis_name",
+   "length": 500
+  },
+  {
+   "name": "type",
+   "type": "esriFieldTypeString",
+   "alias": "type",
+   "length": 500
+  },
+  {
+   "name": "source",
+   "type": "esriFieldTypeString",
+   "alias": "source",
+   "length": 500
+  },
+  {
+   "name": "statut",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "statut"
+  },
+  {
+   "name": "editedby",
+   "type": "esriFieldTypeString",
+   "alias": "editedby",
+   "length": 500
+  },
+  {
+   "name": "editdate",
+   "type": "esriFieldTypeDate",
+   "alias": "editdate",
+   "length": 36
+  },
+  {
+   "name": "globalid",
+   "type": "esriFieldTypeGlobalID",
+   "alias": "globalid",
+   "length": 38
+  },
+  {
+   "name": "operational_center",
+   "type": "esriFieldTypeString",
+   "alias": "operational_center",
+   "length": 10
+  },
+  {
+   "name": "project_code",
+   "type": "esriFieldTypeString",
+   "alias": "project_code",
+   "length": 50
+  },
+  {
+   "name": "note",
+   "type": "esriFieldTypeString",
+   "alias": "note",
+   "length": 500
+  },
+  {
+   "name": "cell",
+   "type": "esriFieldTypeString",
+   "alias": "cell",
+   "length": 50
+  },
+  {
+   "name": "geo_precision",
+   "type": "esriFieldTypeString",
+   "alias": "geo_precision",
+   "length": 50
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "objectid": 1354,
+    "iso3": "bel",
+    "pcode": "bel000001",
+    "name": "Bruxelles",
+    "gis_name": "HQ OCB",
+    "type": "hq",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1485773345000,
+    "globalid": "{4E25637B-8789-4625-A5BB-A60A6416316C}",
+    "operational_center": "ocb",
+    "project_code": null,
+    "note": null,
+    "cell": null,
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": 485798.2578218432,
+    "y": 6591858.8746462436
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13639,
+    "iso3": "zaf",
+    "pcode": null,
+    "name": "Coordination South Africa",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{20947EA8-B4C0-4115-ACD5-03E7312183AE}",
+    "operational_center": "ocb",
+    "project_code": "ZA1-01",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 2055242.3326622986,
+    "y": -4020390.345661243
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13636,
+    "iso3": "pak",
+    "pcode": null,
+    "name": "Coordination Islamabad",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{89E7973B-8CAD-4045-8422-48A549B77036}",
+    "operational_center": "ocb",
+    "project_code": "PK1-05",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 8129800.8940793173,
+    "y": 3989718.303013308
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13662,
+    "iso3": "ind",
+    "pcode": null,
+    "name": "PHC for IDPs in Chhattisgarh",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{31F7015A-D3D5-43F8-BD2B-55CFDB004F29}",
+    "operational_center": "ocb",
+    "project_code": "IN1-45",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 9005450.5840108301,
+    "y": 1999042.9793704317
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13588,
+    "iso3": "ita",
+    "pcode": null,
+    "name": "Post-hospitalisation medical centre Catania ",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{8AF32BB0-6392-4F0D-A2EB-3FEDB33C14C4}",
+    "operational_center": "ocb",
+    "project_code": "IT1-44",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1679035.2635248268,
+    "y": 4510136.7414424745
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13635,
+    "iso3": "khm",
+    "pcode": null,
+    "name": "Cambodia coordination",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{572C73EA-1ED6-453C-824F-BF4FC35D33F1}",
+    "operational_center": "ocb",
+    "project_code": "KH1-01",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 11678430.040609417,
+    "y": 1294224.9154493823
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13606,
+    "iso3": "idn",
+    "pcode": null,
+    "name": "Banten",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{92E34A84-8221-4BB1-83C9-F62485B20A69}",
+    "operational_center": "ocb",
+    "project_code": "FALSE",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 11806992.466899637,
+    "y": -714650.67116403324
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13549,
+    "iso3": "ita",
+    "pcode": null,
+    "name": "Coordination Rome",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{39E793FE-D1A5-4032-A896-1FC3DDFC70EF}",
+    "operational_center": "ocb",
+    "project_code": "IT1-01",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1391089.0437813546,
+    "y": 5146427.9883769881
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13663,
+    "iso3": "zwe",
+    "pcode": null,
+    "name": "Mbare",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{E3004B1A-399E-4B10-A78B-B199CA423E69}",
+    "operational_center": "ocb",
+    "project_code": "ZW1-50",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3455023.0357508296,
+    "y": -2021868.0343920717
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13573,
+    "iso3": "ssd",
+    "pcode": null,
+    "name": "Blue Nile ",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{ABD07DFE-D9C7-42BA-9379-93309B109D45}",
+    "operational_center": "ocb",
+    "project_code": "SS1-28",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3757633.9395232676,
+    "y": 1117680.5012891702
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13629,
+    "iso3": "mwi",
+    "pcode": null,
+    "name": "Support base Lilongwe",
+    "gis_name": null,
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{C2AA04DF-E1B4-4D8B-9B79-FE74D3FB8788}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3763104.9585372848,
+    "y": -1568917.3633880748
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13560,
+    "iso3": "pse",
+    "pcode": null,
+    "name": "Explo Palestine + Coordo",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{9C8B789C-6CAF-49AB-921A-78C3C2CD732E}",
+    "operational_center": "ocb",
+    "project_code": "PS1-01",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3819241.0400350261,
+    "y": 3678896.7444744622
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13597,
+    "iso3": "grc",
+    "pcode": null,
+    "name": "LESVOS - Migrants ",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{7D6C430D-A7CF-4F2A-97FD-9F4297E04F4B}",
+    "operational_center": "ocb",
+    "project_code": "EU1-08",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2925221.0316955615,
+    "y": 4759632.410792144
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13634,
+    "iso3": "idn",
+    "pcode": null,
+    "name": "Coordination  Jakarta",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{F293C474-0947-4366-BED5-8DC66E2BEBAF}",
+    "operational_center": "ocb",
+    "project_code": "ID1-01",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 11892905.963936092,
+    "y": -695289.16593661823
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13637,
+    "iso3": "mwi",
+    "pcode": null,
+    "name": "Coordination malawi",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{EA91FC5D-9323-4820-802A-7268CE795995}",
+    "operational_center": "ocb",
+    "project_code": "MW1-01",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3902911.9975804817,
+    "y": -1784306.5300407978
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13641,
+    "iso3": "zwe",
+    "pcode": null,
+    "name": "Coordination Zimbabwe",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{ACD9151E-29DD-4A58-B5F8-4E332BD5A89D}",
+    "operational_center": "ocb",
+    "project_code": "ZW1-01",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3456821.1794856163,
+    "y": -2013463.1381305994
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13572,
+    "iso3": "ssd",
+    "pcode": null,
+    "name": "Maban/Doro",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{1249B2D5-826B-42A2-BA1F-03D68933AF91}",
+    "operational_center": "ocb",
+    "project_code": "SS1-19",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3757633.9395232676,
+    "y": 1117680.5012891702
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13653,
+    "iso3": "pak",
+    "pcode": null,
+    "name": "Hep C karachi",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{CC8C7A5D-A445-4F21-B37B-1A7826801584}",
+    "operational_center": "ocb",
+    "project_code": "PK1-30",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 7465224.3132799109,
+    "y": 2855235.5409180666
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13602,
+    "iso3": "hti",
+    "pcode": null,
+    "name": "Hurracaine Matthew",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{32F1D83C-A56E-4AF9-AF1A-E793F153AFE5}",
+    "operational_center": "ocb",
+    "project_code": "HT1-20",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -8045861.4339220636,
+    "y": 2098058.2743074032
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13585,
+    "iso3": "ita",
+    "pcode": null,
+    "name": "Vintimille Migrant on the move",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{6535A9F3-A634-4076-8E2E-229B9B304ECE}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 846872.59968603973,
+    "y": 5433192.2608188791
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13587,
+    "iso3": "ita",
+    "pcode": null,
+    "name": "MH Asylum seekers - Trapani",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{4AAB554A-C32C-46CC-BE45-969786E21385}",
+    "operational_center": "ocb",
+    "project_code": "IT1-42",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1395634.9427237334,
+    "y": 4581914.9019021885
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13661,
+    "iso3": "ind",
+    "pcode": null,
+    "name": "AIDS/TB Mumbai",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{759A814B-A607-4F4C-A882-A950D5795F10}",
+    "operational_center": "ocb",
+    "project_code": "IN1-10",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 8117145.9830464423,
+    "y": 2160772.4962091292
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13578,
+    "iso3": "gin",
+    "pcode": null,
+    "name": "Kouroussa Malaria Community",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{F389495B-DEAD-4B1F-B182-DE9365172279}",
+    "operational_center": "ocb",
+    "project_code": "GN1-22",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1100400.1467801789,
+    "y": 1192316.9130782324
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13658,
+    "iso3": "zaf",
+    "pcode": null,
+    "name": "Aids project Khayelitsha",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{4A7B4367-9545-4CA5-978C-9054CE856AD8}",
+    "operational_center": "ocb",
+    "project_code": "ZA1-40",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 2078737.4243891239,
+    "y": -4035254.4499109867
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13574,
+    "iso3": "ssd",
+    "pcode": null,
+    "name": "BOR",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{4C8ECE4A-8792-4F24-9C7B-E9E62E7BE7F8}",
+    "operational_center": "ocb",
+    "project_code": "SS1-16",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3513860.1063588462,
+    "y": 693017.24920570524
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13589,
+    "iso3": "ita",
+    "pcode": null,
+    "name": "Boubon Argos & SAR",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{35AA16C4-093E-4802-8139-757F3C2F40AE}",
+    "operational_center": "ocb",
+    "project_code": "IT1-45",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1679035.2635248268,
+    "y": 4510136.7414424745
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13665,
+    "iso3": "zwe",
+    "pcode": null,
+    "name": "Mutare CAG & VL",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{9188822E-48B1-443A-994C-EA84137E3AC1}",
+    "operational_center": "ocb",
+    "project_code": "ZW1-35",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3638364.7899339735,
+    "y": -2151581.8485099431
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13667,
+    "iso3": "zwe",
+    "pcode": null,
+    "name": "Out of district - Gutu",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{461CF7A9-9A5A-4DBB-AE91-C281CC156EA2}",
+    "operational_center": "ocb",
+    "project_code": "ZW1-60",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3468260.0364010604,
+    "y": -2230907.5483673094
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13600,
+    "iso3": "sle",
+    "pcode": null,
+    "name": "Construction Kenema Hospital",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{D66BE7EE-DC7A-4ABF-97A6-34860AACFC91}",
+    "operational_center": "ocb",
+    "project_code": "SL1-24",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1246301.537658175,
+    "y": 878089.79858382128
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13598,
+    "iso3": "grc",
+    "pcode": null,
+    "name": "Thessaloniki urban day center ",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{47CBF556-4A92-45AB-A00E-C529B35057C8}",
+    "operational_center": "ocb",
+    "project_code": "EU1-16",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2553621.1400971645,
+    "y": 4959570.1447834922
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13640,
+    "iso3": "ind",
+    "pcode": null,
+    "name": "Coordination India ",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{C2852834-985C-4F74-AB19-A34F8472505C}",
+    "operational_center": "ocb",
+    "project_code": "IN1-01",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 8597464.6502534859,
+    "y": 3321918.0031708707
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13656,
+    "iso3": "moz",
+    "pcode": null,
+    "name": "Tete ",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{2C1466A1-9898-41F7-81B5-E1FE76C42E63}",
+    "operational_center": "ocb",
+    "project_code": "MZ1-21",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3739287.3742456296,
+    "y": -1823421.0206149155
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13607,
+    "iso3": "nru",
+    "pcode": null,
+    "name": "Migrants Nauru",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{0DA51FA3-FA1C-43F3-BDC3-F1E36464F9FB}",
+    "operational_center": "ocb",
+    "project_code": "ID1-27",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 18582729.911315821,
+    "y": -58196.188245121761
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13590,
+    "iso3": "egy",
+    "pcode": null,
+    "name": "MAADI MH Cairo",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{345BE3A5-7A3C-4B1A-B876-600CC4E878F8}",
+    "operational_center": "ocb",
+    "project_code": "EG1-03",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3483023.0645209658,
+    "y": 3517940.1690420923
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13619,
+    "iso3": "moz",
+    "pcode": null,
+    "name": "Manica PHC ",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{7647AD3A-0BCE-455A-92AF-C4F9697C1693}",
+    "operational_center": "ocb",
+    "project_code": "MZ1-61",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3648243.5041859522,
+    "y": -2326449.0476805898
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13633,
+    "iso3": "hti",
+    "pcode": null,
+    "name": "Coordination Haiti",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{D3EE462F-4045-4908-8A23-7473AA112C7E}",
+    "operational_center": "ocb",
+    "project_code": "HT1-01",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": -8045861.4339220636,
+    "y": 2098058.2743074032
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13551,
+    "iso3": "mrt",
+    "pcode": null,
+    "name": "coordination nouakchott",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{AE79BE9E-4428-4C38-8BA4-885EB25E8A90}",
+    "operational_center": "ocb",
+    "project_code": "MR1-01",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1776462.7359804276,
+    "y": 2046156.8638018277
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13553,
+    "iso3": "grc",
+    "pcode": null,
+    "name": "Regional coordination Athene",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{AE1A8EF9-B397-4802-8585-0E117399464C}",
+    "operational_center": "ocb",
+    "project_code": "EU1-07",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2641337.6842693258,
+    "y": 4577138.8546165228
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13603,
+    "iso3": "hti",
+    "pcode": null,
+    "name": "Hopital Tabarre",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{23878F90-0824-4810-875F-32D8D633582B}",
+    "operational_center": "ocb",
+    "project_code": "HT1-43",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -8045861.4339220636,
+    "y": 2098058.2743074032
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13550,
+    "iso3": "egy",
+    "pcode": null,
+    "name": "Coordination Cairo ",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{F9C9C07D-4E0E-4201-8AE6-CCC5F657993F}",
+    "operational_center": "ocb",
+    "project_code": "EG1-01",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3483023.0645209658,
+    "y": 3517940.1690420923
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13618,
+    "iso3": "mwi",
+    "pcode": null,
+    "name": "Corridor/cross border",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{DE166420-E332-4CAA-803D-376591B2E2BB}",
+    "operational_center": "ocb",
+    "project_code": "MW1-30",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3843282.0425447035,
+    "y": -1758749.2668789306
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13601,
+    "iso3": "ken",
+    "pcode": null,
+    "name": "Embu County NCD",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{F63EEE12-FA87-4EB3-B103-A6C9E8D874C1}",
+    "operational_center": "ocb",
+    "project_code": "KE1-63",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 4169988.1046458958,
+    "y": -59984.119006855952
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13577,
+    "iso3": "gin",
+    "pcode": null,
+    "name": "SIDA Conakry MATAM",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{0B691BC3-488F-4E94-954A-5B895BA77673}",
+    "operational_center": "ocb",
+    "project_code": "GN1-91",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1511540.7068141804,
+    "y": 1078352.8561610957
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13592,
+    "iso3": "mrt",
+    "pcode": null,
+    "name": "Refugees Mauritania",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{9CA62BEC-27DD-41BE-8D5E-85D0A3B101EF}",
+    "operational_center": "ocb",
+    "project_code": "MR1-06",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -662816.54807153111,
+    "y": 1788732.7458112901
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13654,
+    "iso3": "mwi",
+    "pcode": null,
+    "name": "Prisons",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{C5D13D0D-DFF3-4ED2-9AA8-4ED7956939E9}",
+    "operational_center": "ocb",
+    "project_code": "MW1-15",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4095321.6148446635,
+    "y": -146402.32613443502
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13575,
+    "iso3": "ssd",
+    "pcode": null,
+    "name": "Pibor Jongley",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{B9DF4032-9B52-4539-90E0-056BEDDDD162}",
+    "operational_center": "ocb",
+    "project_code": "SS1-25",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3722340.4300389281,
+    "y": 693499.20732016792
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13638,
+    "iso3": "moz",
+    "pcode": null,
+    "name": "Coordination Mozambique",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{F30CD87D-B7C6-4C50-8DF7-4D9083CA2255}",
+    "operational_center": "ocb",
+    "project_code": "MZ1-01",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3627118.1817791308,
+    "y": -2994552.6683924939
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13643,
+    "iso3": "tur",
+    "pcode": null,
+    "name": "Coordination Hatay",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{2B843726-4E83-4DD5-88FD-96E8572154BD}",
+    "operational_center": "ocb",
+    "project_code": "TR1-01",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4024841.7943192283,
+    "y": 4327569.5299098287
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13604,
+    "iso3": "hti",
+    "pcode": null,
+    "name": "Martissant",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{A5831F4B-38B4-4699-AB79-7F96E81ABEFE}",
+    "operational_center": "ocb",
+    "project_code": "HT1-18",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -8045861.4339220636,
+    "y": 2098058.2743074032
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13586,
+    "iso3": "ita",
+    "pcode": null,
+    "name": "Rehab of voT Rome",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{B0E3222C-753E-4D27-847C-CA42145CFCB8}",
+    "operational_center": "ocb",
+    "project_code": "IT1-13",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1391089.0437813546,
+    "y": 5146427.9883769881
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13593,
+    "iso3": "mrt",
+    "pcode": null,
+    "name": "Mother & Child Project Barkeol",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{7DD2F660-34CB-42DD-A623-A7131912FEF9}",
+    "operational_center": "ocb",
+    "project_code": "MR1-08",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1391493.8575549007,
+    "y": 1880149.1962323617
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13596,
+    "iso3": "grc",
+    "pcode": null,
+    "name": "Rehabilitation VOT in Athens",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{EA541239-B499-439A-8346-042D66DA22EF}",
+    "operational_center": "ocb",
+    "project_code": "EU1-06",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2641337.6842693258,
+    "y": 4577138.8546165228
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13599,
+    "iso3": "sle",
+    "pcode": null,
+    "name": "Gorama Mende",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{0544E2D1-472F-4B0F-B7D9-5747914B343F}",
+    "operational_center": "ocb",
+    "project_code": "SL1-23",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1261326.2684387814,
+    "y": 932796.77160755417
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13617,
+    "iso3": "ukr",
+    "pcode": null,
+    "name": "New UA TB Zhyeomir",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{A7C549AE-3F3C-4A7A-9302-2329CBB8BE45}",
+    "operational_center": "ocb",
+    "project_code": "UA1-11",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3190268.2091276716,
+    "y": 6490495.5643730732
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13552,
+    "iso3": "srb",
+    "pcode": null,
+    "name": "Coordination Serbia",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{B09DBDB5-8F0B-4D5B-BA5D-DE97E115C99C}",
+    "operational_center": "ocb",
+    "project_code": "EU2-01",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2276363.9925199449,
+    "y": 5587982.9924489101
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13616,
+    "iso3": "ukr",
+    "pcode": null,
+    "name": "TB project Dnepro/Donetsk",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{2442CBAB-8332-4AB3-BFA1-1BEE18F5B978}",
+    "operational_center": "ocb",
+    "project_code": "UA1-03",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3901323.3474425748,
+    "y": 6184519.5600975482
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13579,
+    "iso3": "gin",
+    "pcode": null,
+    "name": "Measles Conakry",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{B59C9D53-020C-42DC-93CA-41AE49456596}",
+    "operational_center": "ocb",
+    "project_code": "GN1-37",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1511540.7068141804,
+    "y": 1078352.8561610957
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13547,
+    "iso3": "gin",
+    "pcode": null,
+    "name": "Coordination Conakry",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{DCD56495-2067-4A24-89B3-19A17B2A35E3}",
+    "operational_center": "ocb",
+    "project_code": "GN1-01",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1511540.7068141804,
+    "y": 1078352.8561610957
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13615,
+    "iso3": "pak",
+    "pcode": null,
+    "name": "Bajaur Emergency",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{5269B8AE-29A3-4E49-B62F-DCCB7CF91A8D}",
+    "operational_center": "ocb",
+    "project_code": "PK1-27",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7951544.1874076119,
+    "y": 4144455.9079030724
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13556,
+    "iso3": "ukr",
+    "pcode": null,
+    "name": "Coordination Ukraine",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{068EA1A6-30D2-43F3-AF51-50D522CDDEFE}",
+    "operational_center": "ocb",
+    "project_code": "UA1-01",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3397849.0419337922,
+    "y": 6524593.2421604022
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13622,
+    "iso3": "ind",
+    "pcode": null,
+    "name": "HepC Uttar Pradesh",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{3B770E3D-6F10-4E01-AAF5-5022B437D21A}",
+    "operational_center": "ocb",
+    "project_code": "IN1-60",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 8650238.4050120525,
+    "y": 3373668.5197269744
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13673,
+    "iso3": "tur",
+    "pcode": null,
+    "name": "Support programmes Syrie",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{27251C07-9F64-4995-BBD5-7EB493B336E6}",
+    "operational_center": "ocb",
+    "project_code": "TR1-03",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4025265.8102596588,
+    "y": 4328125.4480781509
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13666,
+    "iso3": "zwe",
+    "pcode": null,
+    "name": "Chipingué",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{4885963D-FCF5-47FC-B3B4-20606F62A16A}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3632956.8890712345,
+    "y": -2297166.3968212651
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13660,
+    "iso3": "zaf",
+    "pcode": null,
+    "name": "Kawazulu natal",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{86E2244A-CF9D-4F03-937D-84DF042D4E98}",
+    "operational_center": "ocb",
+    "project_code": "ZA1-81",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3502155.708152703,
+    "y": -3362863.8964490159
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13664,
+    "iso3": "zwe",
+    "pcode": null,
+    "name": "WASH as prevention",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{802568B8-A8B0-4247-A6E0-5138BFC4FEC2}",
+    "operational_center": "ocb",
+    "project_code": "ZW1-70",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3464996.5942089655,
+    "y": -2019907.882701362
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13554,
+    "iso3": "sle",
+    "pcode": null,
+    "name": "Coordination  Sierra Leone",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{30AFA90B-CAA5-465A-8EC5-020A0F87F95C}",
+    "operational_center": "ocb",
+    "project_code": "SL1-01",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -1472948.6636720186,
+    "y": 945842.76139514754
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13591,
+    "iso3": "egy",
+    "pcode": null,
+    "name": "Alexandria irregular migrants detention",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{7CB420A2-3C24-4F7B-9E86-839600F4AC7A}",
+    "operational_center": "ocb",
+    "project_code": "EG1-15",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3330538.755813851,
+    "y": 3658762.305352468
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13652,
+    "iso3": "pak",
+    "pcode": null,
+    "name": "Karachi PHC",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{BABAC1A3-B9BD-4E2C-81C8-8F5BF940B82A}",
+    "operational_center": "ocb",
+    "project_code": "PK1-24",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 7465224.3132799109,
+    "y": 2855235.5409180666
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13659,
+    "iso3": "zaf",
+    "pcode": null,
+    "name": "Rustenberg SA",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{1E8BD7F1-FE09-4889-9B24-8B5F8A54E4B9}",
+    "operational_center": "ocb",
+    "project_code": "ZA1-07",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3031834.8670527912,
+    "y": -2958951.3515111124
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13594,
+    "iso3": "srb",
+    "pcode": null,
+    "name": "New projects Balkans North Belgrade",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{086DF2DF-5DDA-4818-815C-C863E79CE845}",
+    "operational_center": "ocb",
+    "project_code": "EU2-14",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2276363.9925199449,
+    "y": 5587982.9924489101
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13655,
+    "iso3": "mwi",
+    "pcode": null,
+    "name": "NSANJE",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{55B5C888-0822-4479-B6F3-E6856CA8B358}",
+    "operational_center": "ocb",
+    "project_code": "MW1-14",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3925113.5568242897,
+    "y": -1911700.143646766
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13621,
+    "iso3": "moz",
+    "pcode": null,
+    "name": "Cholera Tete",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{9F4E23EB-36FF-44CC-8A26-3A67FB8E4FF7}",
+    "operational_center": "ocb",
+    "project_code": "MZ1-24",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3739287.3742456296,
+    "y": -1823421.0206149155
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13651,
+    "iso3": "khm",
+    "pcode": null,
+    "name": "Preah Vinear malaria",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{10DF2F43-BFE8-4E88-B32E-BD276763EBF3}",
+    "operational_center": "ocb",
+    "project_code": "KH1-61",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 11686087.263103122,
+    "y": 1552756.5632647253
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13576,
+    "iso3": "ssd",
+    "pcode": null,
+    "name": "Yei Equatoria Violence IDP",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{EFD269F3-C4AB-470A-AE42-9350D2790062}",
+    "operational_center": "ocb",
+    "project_code": "SS1-22",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3415004.3467275938,
+    "y": 456272.37269457977
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13674,
+    "iso3": "tur",
+    "pcode": null,
+    "name": "Psychiatric clinic Rehanly",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{798C922B-C361-41A2-9A8B-74F0231B7739}",
+    "operational_center": "ocb",
+    "project_code": "TR1-04",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4025125.5477012591,
+    "y": 4327388.8281812817
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13614,
+    "iso3": "pak",
+    "pcode": null,
+    "name": "Lower Dir District project",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{5D10B302-BE81-4476-9BA4-A9271EFA4D62}",
+    "operational_center": "ocb",
+    "project_code": "PK1-17",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7995799.0304485662,
+    "y": 4142000.4951798222
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13657,
+    "iso3": "moz",
+    "pcode": null,
+    "name": "Corridor/cross border (Beira)",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{4E0D89C1-537B-41A1-8D90-389EC4315D6B}",
+    "operational_center": "ocb",
+    "project_code": "MZ1-35",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3879699.7686797623,
+    "y": -2255010.3838444352
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13584,
+    "iso3": "ita",
+    "pcode": null,
+    "name": "Migrants on the move",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{11DD9D6D-03CD-44D1-8537-9869EB391554}",
+    "operational_center": "ocb",
+    "project_code": "IT1-43",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1022136.5663392544,
+    "y": 5694536.851860797
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13650,
+    "iso3": "ken",
+    "pcode": null,
+    "name": "Kibera PHC",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{AB9DA32D-054E-4D27-8F88-258E08B94E87}",
+    "operational_center": "ocb",
+    "project_code": "KE1-41",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4095321.6148446635,
+    "y": -146402.32613443502
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13672,
+    "iso3": "tur",
+    "pcode": null,
+    "name": "Qunaya Field hospital",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{514AFC27-AE36-44F6-A8F3-65E2431DE098}",
+    "operational_center": "ocb",
+    "project_code": "TR1-02",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4025265.8102596588,
+    "y": 4328125.4480781509
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13620,
+    "iso3": "moz",
+    "pcode": null,
+    "name": "Cholera Numpala",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{6DA63716-9B21-4A30-8416-89AF2F4D14B7}",
+    "operational_center": "ocb",
+    "project_code": "MZ1-28",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 4372162.835734888,
+    "y": -1703821.6524485252
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13557,
+    "iso3": "rus",
+    "pcode": null,
+    "name": "Coordination Russia",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{E79CC4A2-E35E-47C4-8753-2B6CC7AE4FFA}",
+    "operational_center": "ocb",
+    "project_code": "RU1-01",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 4187538.6800159328,
+    "y": 7509960.2845640397
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13632,
+    "iso3": "ken",
+    "pcode": null,
+    "name": "coordination Nairobi",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "GIS_ADMIN",
+    "editdate": 1492085593000,
+    "globalid": "{6E303E02-B921-4608-AA98-51B75F9F7728}",
+    "operational_center": "ocb",
+    "project_code": "KE1-01",
+    "note": null,
+    "cell": "3",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4094063.9272376802,
+    "y": -143333.23549583388
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13648,
+    "iso3": "cod",
+    "pcode": "cod000034",
+    "name": "AVI Masisi",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{94F03151-07B1-4CFD-88D4-A6753FC58E29}",
+    "operational_center": "ocb",
+    "project_code": "CD1-92",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3208119.8560755649,
+    "y": -155865.58135155347
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13541,
+    "iso3": "bdi",
+    "pcode": "bdi000001",
+    "name": "Coordination Bujumbura",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194222000,
+    "globalid": "{43F94BF6-8F1E-4F97-8E39-C94B66E0ED83}",
+    "operational_center": "ocb",
+    "project_code": "BI1-01",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3268326.7239271053,
+    "y": -374401.86713126488
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13536,
+    "iso3": "cod",
+    "pcode": "cod000039",
+    "name": "Site sentinel PUC Mbuji May",
+    "gis_name": null,
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{548B1BAE-2DAD-421B-BDB6-0D4C3ECC0B7C}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2626767.9192532208,
+    "y": -683769.16558195301
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13628,
+    "iso3": "cod",
+    "pcode": "cod000049",
+    "name": "Base d'appui Kinshasa",
+    "gis_name": null,
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{0D51A94B-328F-4A64-A695-3825984188D3}",
+    "operational_center": "ocb",
+    "project_code": "CD1-22",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 1699794.5231407636,
+    "y": -482199.01924458449
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13647,
+    "iso3": "cod",
+    "pcode": "cod000043",
+    "name": "Nord Kivu -  Masisi",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{FB1D7485-E948-4666-9324-133643A9E7B5}",
+    "operational_center": "ocb",
+    "project_code": "CD1-84",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3208119.8560755649,
+    "y": -155865.58135155347
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13571,
+    "iso3": "cod",
+    "pcode": "cod000037",
+    "name": "Kananga - urgence Kasai",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{637D34D8-82E5-413B-8F8C-E82EBB13E4A7}",
+    "operational_center": "ocb",
+    "project_code": "CD1-36",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2499028.058061305,
+    "y": -657781.94989409402
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13613,
+    "iso3": "afg",
+    "pcode": "afg000007",
+    "name": "Kandahar ",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194279000,
+    "globalid": "{1252673E-AD08-41C8-A7B8-A8C5EF9B566B}",
+    "operational_center": "ocb",
+    "project_code": "FALSE",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7317828.8471883116,
+    "y": 3714692.165546054
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13538,
+    "iso3": "cod",
+    "pcode": "cod000035",
+    "name": "Site sentinel PUC Kindu",
+    "gis_name": null,
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{09DBF51C-1335-4D65-9B12-1FD2C58DE7C1}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2885751.5352650872,
+    "y": -328450.79639441258
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13611,
+    "iso3": "afg",
+    "pcode": "afg000012",
+    "name": "Khost",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194279000,
+    "globalid": "{060DD573-6C36-42F0-80B2-7AFD73C6228A}",
+    "operational_center": "ocb",
+    "project_code": "AF1-83",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7785369.706644644,
+    "y": 3939700.8706733901
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13609,
+    "iso3": "afg",
+    "pcode": "afg000006",
+    "name": "Lashkar Gah (Helman)",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194279000,
+    "globalid": "{129BE3DC-B5F9-4DFC-B03A-CCE36D63F014}",
+    "operational_center": "ocb",
+    "project_code": "FALSE",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7169889.3627452115,
+    "y": 3712169.0316014332
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13537,
+    "iso3": "cod",
+    "pcode": "cod000041",
+    "name": "Site sentinel PUC Kisangani",
+    "gis_name": null,
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{8724B6DA-1B5A-457E-80A5-7B8A86EC9B96}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2805337.1955816587,
+    "y": 57721.234937834866
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13649,
+    "iso3": "cod",
+    "pcode": "cod000036",
+    "name": "Pool d'urgence (PUC) - RDC",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{72BC6B25-4FCF-4F3B-A34E-ABCDF8CCC354}",
+    "operational_center": "ocb",
+    "project_code": "CD1-55",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 1699984.3228725614,
+    "y": -482305.075195938
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13583,
+    "iso3": "caf",
+    "pcode": "caf000020",
+    "name": "HIV Banguy",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194120000,
+    "globalid": "{4EE6AC79-23C0-4610-B2B4-5E9103078B49}",
+    "operational_center": "ocb",
+    "project_code": "CF1-13",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2065888.2501581523,
+    "y": 489693.20617514971
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13626,
+    "iso3": "cod",
+    "pcode": "cod000045",
+    "name": "Base d'appui Goma",
+    "gis_name": null,
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{B5EE8D41-527D-47FE-B500-0ABD4B881EF4}",
+    "operational_center": "ocb",
+    "project_code": "CD1-03",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3253793.5752311028,
+    "y": -188431.3014329185
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13548,
+    "iso3": "caf",
+    "pcode": "caf000019",
+    "name": "Coordination Bangui",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194120000,
+    "globalid": "{846C375F-7960-40A6-844C-F0944BE8B673}",
+    "operational_center": "ocb",
+    "project_code": "CF1-07",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2065888.2501581523,
+    "y": 489693.20617514971
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13608,
+    "iso3": "afg",
+    "pcode": "afg000008",
+    "name": "Kabul Hospital Arzan Kimat",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194279000,
+    "globalid": "{6FF90C81-8ECB-4572-97D0-A3BE3D103B0C}",
+    "operational_center": "ocb",
+    "project_code": "AF1-80",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7704142.100602611,
+    "y": 4103617.8341302536
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13539,
+    "iso3": "cod",
+    "pcode": "cod000048",
+    "name": "Site sentinel PUC Mbandaka",
+    "gis_name": null,
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{6AF236C8-A810-446C-B687-B102212C2EA7}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2036820.4261306475,
+    "y": 2957.9484421824664
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13610,
+    "iso3": "afg",
+    "pcode": "afg000009",
+    "name": "Kunduz",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194279000,
+    "globalid": "{C266EDBB-FBBE-421D-8EBB-82F712604D52}",
+    "operational_center": "ocb",
+    "project_code": "AF1-82",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7666358.3729960276,
+    "y": 4401342.119490495
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13595,
+    "iso3": "bgr",
+    "pcode": "bgr000001",
+    "name": "Bulgaria",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194190000,
+    "globalid": "{D7E0D442-F643-480B-9A91-6BD87F8B9274}",
+    "operational_center": "ocb",
+    "project_code": "EU2-15",
+    "note": null,
+    "cell": "2",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2596238.2486744979,
+    "y": 5266363.5008848924
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13646,
+    "iso3": "cod",
+    "pcode": "cod000042",
+    "name": "Bili Malaria",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{2E0BC3D7-BBCC-4D3F-A159-678DA6B1D221}",
+    "operational_center": "ocb",
+    "project_code": "CD1-24",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 2219068.6669144705,
+    "y": 508291.97316909436
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13581,
+    "iso3": "caf",
+    "pcode": "caf000018",
+    "name": "IDP BANGUI",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194120000,
+    "globalid": "{2FB70863-1F52-4A4B-B256-65E5940C4B58}",
+    "operational_center": "ocb",
+    "project_code": "CF1-11",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2065888.2501581523,
+    "y": 489693.20617514971
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13582,
+    "iso3": "caf",
+    "pcode": "caf000022",
+    "name": "Grand Bangui SRH",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194121000,
+    "globalid": "{C8DD87EA-71FD-491B-B821-C6B8223D15A8}",
+    "operational_center": "ocb",
+    "project_code": "CF1-12",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2065888.2501581523,
+    "y": 489693.20617514971
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13580,
+    "iso3": "caf",
+    "pcode": "caf000023",
+    "name": "Bangassou",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194121000,
+    "globalid": "{DA48BD3F-1E6E-4B46-9FE6-3FBB009DF62A}",
+    "operational_center": "ocb",
+    "project_code": "CF1-08",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2539922.0040393104,
+    "y": 528018.44050392229
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13612,
+    "iso3": "afg",
+    "pcode": "afg000010",
+    "name": "Dasht e Barchi (Kabul)",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194279000,
+    "globalid": "{E1DC6627-7E8E-4FC7-95CE-0ACF4B3917E4}",
+    "operational_center": "ocb",
+    "project_code": "FALSE",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7704142.100602611,
+    "y": 4103617.8341302536
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13540,
+    "iso3": "caf",
+    "pcode": "caf000021",
+    "name": "Base Bangui",
+    "gis_name": null,
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194121000,
+    "globalid": "{8DE20779-160F-489C-8E0A-47771B407E53}",
+    "operational_center": "ocb",
+    "project_code": "CF1-15",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2065888.2501581523,
+    "y": 489693.20617514971
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13555,
+    "iso3": "afg",
+    "pcode": "afg000011",
+    "name": "Coordination Kaboul",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194279000,
+    "globalid": "{60E6233D-61CB-4CCF-BB8B-A17F6A2BAB46}",
+    "operational_center": "ocb",
+    "project_code": "AF1-01",
+    "note": null,
+    "cell": "4",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 7704142.100602611,
+    "y": 4103617.8341302536
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13570,
+    "iso3": "cod",
+    "pcode": "cod000044",
+    "name": "Bikenge",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "CARTONG",
+    "editdate": 1493194635000,
+    "globalid": "{6A8E4DF5-3B5B-4BB5-A2D4-2A06E8C478CA}",
+    "operational_center": "ocb",
+    "project_code": null,
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2944409.9936388033,
+    "y": -339680.787885078
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13546,
+    "iso3": "ssd",
+    "pcode": null,
+    "name": "Juba",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1498565955000,
+    "globalid": "{081F7A79-E548-4FA1-861A-7BC57B9718FA}",
+    "operational_center": "ocb",
+    "project_code": "SS1-03",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3514495.4737071404,
+    "y": 541591.48723611073
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 21279,
+    "iso3": null,
+    "pcode": null,
+    "name": "Gitega",
+    "gis_name": "Palu Gitega",
+    "type": "project",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499163618000,
+    "globalid": "{251699CA-3236-4E02-9645-4A31F4B50454}",
+    "operational_center": "ocb",
+    "project_code": "BI1-29",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": 3334152.8610811201,
+    "y": -373511.84548278153
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13542,
+    "iso3": "kgz",
+    "pcode": null,
+    "name": "Erbil",
+    "gis_name": "Explo Kurdistan Mosul + Coordination",
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499166821000,
+    "globalid": "{3058C38F-C632-43DC-B4F4-033ABEF47934}",
+    "operational_center": "ocb",
+    "project_code": "IQ2-01",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 4899044.9987873733,
+    "y": 4329044.2242078241
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13562,
+    "iso3": "irq",
+    "pcode": null,
+    "name": "Hammam al Alil",
+    "gis_name": "Mobile Surgical Trucks",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167094000,
+    "globalid": "{58397E04-EB09-418E-870C-C0A1E031DD56}",
+    "operational_center": "ocb",
+    "project_code": "IQ2-02",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 4814540.146936384,
+    "y": 4323823.8287564935
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13563,
+    "iso3": "irq",
+    "pcode": null,
+    "name": "Hamdaniya",
+    "gis_name": "Post Operative Care",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167179000,
+    "globalid": "{E4D8BB86-9E88-4E5A-863C-6345E9D9A83D}",
+    "operational_center": "ocb",
+    "project_code": "IQ2-03",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 4829424.7873698445,
+    "y": 4338427.9436793672
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13564,
+    "iso3": "tun",
+    "pcode": null,
+    "name": "Sfax",
+    "gis_name": "Tunisie South Coast Sfax",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167481000,
+    "globalid": "{833F2D27-1551-4E5D-9B1B-83868B62D1F1}",
+    "operational_center": "ocb",
+    "project_code": "TN1-15",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1198483.6716378927,
+    "y": 4129667.8145480137
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13543,
+    "iso3": "tun",
+    "pcode": null,
+    "name": "Tunis",
+    "gis_name": "Coordination Tunisia",
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167597000,
+    "globalid": "{CFE0C191-0E46-4207-A3E3-8AA716FAC1ED}",
+    "operational_center": "ocb",
+    "project_code": "TN1-01",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1143341.3022763941,
+    "y": 4414157.8723533358
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13565,
+    "iso3": "tun",
+    "pcode": null,
+    "name": "Tunis",
+    "gis_name": "IVDU Tunis",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167601000,
+    "globalid": "{534443FC-0ACF-49B5-AD90-7F97C61D998C}",
+    "operational_center": "ocb",
+    "project_code": "TN1-16",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1120317.6669607891,
+    "y": 4406667.2457145797
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13566,
+    "iso3": "nga",
+    "pcode": null,
+    "name": "Maiduguri",
+    "gis_name": "Emergency Nutrition Maiduguri",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167658000,
+    "globalid": "{194BB5F4-A66C-4360-9760-AFA6559BC9C2}",
+    "operational_center": "ocb",
+    "project_code": "NG2-10",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1463958.9498791425,
+    "y": 1326492.2659298051
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13567,
+    "iso3": "nga",
+    "pcode": null,
+    "name": "Onitsha",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167797000,
+    "globalid": "{DE9B1938-71F1-4FD3-8044-AC3AA4760C31}",
+    "operational_center": "ocb",
+    "project_code": "NG1-01",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 757300.81857261097,
+    "y": 684960.55299157836
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 21679,
+    "iso3": null,
+    "pcode": null,
+    "name": "Abuja",
+    "gis_name": null,
+    "type": "coordination",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167862000,
+    "globalid": "{F557444B-35A8-4052-9C98-B26BE45A911A}",
+    "operational_center": "ocb",
+    "project_code": "NG1-00",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": 827314.70157321752,
+    "y": 1015182.6535613284
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13544,
+    "iso3": "bel",
+    "pcode": "bel000003",
+    "name": "Coordination Destination Countries",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167917000,
+    "globalid": "{F57D450B-A817-4F7A-9109-B9D0D1DE96E2}",
+    "operational_center": "ocb",
+    "project_code": "BE1-11",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 481000.56242893689,
+    "y": 6594935.5353015522
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13568,
+    "iso3": "bel",
+    "pcode": "bel000002",
+    "name": "Poelkapelle",
+    "gis_name": "Destination Countries Belgium",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499167956000,
+    "globalid": "{8E38360A-B109-40B0-AF3A-92D6D8CFDFBA}",
+    "operational_center": "ocb",
+    "project_code": "BE1-12",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 325423.94097917434,
+    "y": 6606208.2173974449
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13569,
+    "iso3": "swe",
+    "pcode": null,
+    "name": "Götene",
+    "gis_name": "Destination Countries Sweden",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499168038000,
+    "globalid": "{490D1B5C-EB02-4DE0-BC32-F74FB3AFDF19}",
+    "operational_center": "ocb",
+    "project_code": "BE1-13",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 1501933.4790929446,
+    "y": 8078825.4215105521
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13545,
+    "iso3": "swe",
+    "pcode": null,
+    "name": "Stockholm",
+    "gis_name": "Coordination Sweden",
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499168058000,
+    "globalid": "{47B228B8-FF0E-4E53-9316-E2C358D4DB6C}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 2010928.9376842561,
+    "y": 8248995.588817005
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13631,
+    "iso3": "cod",
+    "pcode": "cod000040",
+    "name": "Kinshasa",
+    "gis_name": "Coordination centrale - Kinshasa",
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499168120000,
+    "globalid": "{CC6C84F9-7EC5-41C5-BE37-8F9CD6142866}",
+    "operational_center": "ocb",
+    "project_code": "CD1-00",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 1699794.5231407636,
+    "y": -482199.01924458449
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13627,
+    "iso3": "cod",
+    "pcode": "cod000046",
+    "name": "Kinshasa",
+    "gis_name": "Site sentinel PUC Kinshasa",
+    "type": "support_base",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499168140000,
+    "globalid": "{158FA09D-ECBD-460F-9366-9D6EFD0BCF53}",
+    "operational_center": "ocb",
+    "project_code": "",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 1699984.3228725614,
+    "y": -482305.075195938
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13630,
+    "iso3": "cod",
+    "pcode": "cod000047",
+    "name": "Bureau intersection Kinshasa",
+    "gis_name": "BALI ( Bureau intersection Kinshasa)",
+    "type": "international_office",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499168166000,
+    "globalid": "{254DA809-86F8-4EF9-AB48-497D54B62BB9}",
+    "operational_center": "ocb",
+    "project_code": "CD1-11",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 1699953.4873736138,
+    "y": -482525.22544830292
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13645,
+    "iso3": "cod",
+    "pcode": "cod000038",
+    "name": "Kinshasa",
+    "gis_name": "SIDA Kinshasa",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499168179000,
+    "globalid": "{17524534-7709-45DE-B1D8-39CC7CB1D6EC}",
+    "operational_center": "ocb",
+    "project_code": "CD1-72",
+    "note": null,
+    "cell": "1",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 1701273.1799369708,
+    "y": -481773.23384862562
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 20486,
+    "iso3": null,
+    "pcode": null,
+    "name": "Kinshasa",
+    "gis_name": null,
+    "type": "international_office",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499171551000,
+    "globalid": "{91538F7B-701D-4967-8502-6155002B78E6}",
+    "operational_center": "ocb",
+    "project_code": "CD1-11",
+    "note": null,
+    "cell": "1",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": 1700164.5581450348,
+    "y": -482680.7559189946
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13559,
+    "iso3": "bol",
+    "pcode": "bol000003",
+    "name": "La Paz",
+    "gis_name": "Coordination Bolivie",
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259099000,
+    "globalid": "{7A67F2C0-2324-4682-BF5E-44F503E7F842}",
+    "operational_center": "ocb",
+    "project_code": "BO1-01",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -7583005.0771947782,
+    "y": -1861501.7885765519
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 22079,
+    "iso3": null,
+    "pcode": null,
+    "name": "El Alto (La Paz)",
+    "gis_name": "El Alto",
+    "type": "project",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259141000,
+    "globalid": "{5B0748CA-31F6-4C7D-9719-06E8EA751601}",
+    "operational_center": "ocb",
+    "project_code": "BO1-02",
+    "note": null,
+    "cell": "5",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": -7592231.9745286256,
+    "y": -1862118.8018602293
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13623,
+    "iso3": "ven",
+    "pcode": null,
+    "name": "Bolivar",
+    "gis_name": "Bolivar Malaria",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259178000,
+    "globalid": "{8DF8F752-699A-4E83-8DF8-C55D1D9580E7}",
+    "operational_center": "ocb",
+    "project_code": "VE1-03",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -6872258.6289410386,
+    "y": 538490.51738906442
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13624,
+    "iso3": "ven",
+    "pcode": null,
+    "name": "Maracaibo",
+    "gis_name": "Maracaibo SRH",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259226000,
+    "globalid": "{E2A146A4-AE09-4936-AB34-CBD0F87CBA03}",
+    "operational_center": "ocb",
+    "project_code": "VE1-02",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -7983252.8097627554,
+    "y": 1192942.2282327916
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13558,
+    "iso3": "ven",
+    "pcode": null,
+    "name": "Caracas",
+    "gis_name": "Coordination Venezuela",
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259248000,
+    "globalid": "{CA7ED6D8-E150-41DA-9323-F69D06EF21F7}",
+    "operational_center": "ocb",
+    "project_code": "VE1-01",
+    "note": null,
+    "cell": "5",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": -7447674.4918767782,
+    "y": 1173255.6361682825
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 22080,
+    "iso3": null,
+    "pcode": null,
+    "name": "Port-au-Prince",
+    "gis_name": "Coordination Haiti",
+    "type": "coordination",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259446000,
+    "globalid": "{299A9A90-EDBF-4287-A32D-44E6A3B22107}",
+    "operational_center": "ocb",
+    "project_code": "HT1-01",
+    "note": null,
+    "cell": "3",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": -8044819.6357733039,
+    "y": 2111135.3044648916
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 22081,
+    "iso3": null,
+    "pcode": null,
+    "name": "Port-au-Prince",
+    "gis_name": "Tabarre hospital",
+    "type": "project",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259544000,
+    "globalid": "{8FB90AC4-A2FC-4B5B-BDF5-7E50DB2677D8}",
+    "operational_center": "ocb",
+    "project_code": "HT1-43",
+    "note": null,
+    "cell": "3",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": -8044528.4109610068,
+    "y": 2106986.3026009616
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 22082,
+    "iso3": null,
+    "pcode": null,
+    "name": "Port-au-Prince",
+    "gis_name": "Martissant",
+    "type": "project",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259605000,
+    "globalid": "{C4E1AA41-FE9B-41F3-98DF-3F8FCF1FDA5C}",
+    "operational_center": "ocb",
+    "project_code": "HT1-18",
+    "note": null,
+    "cell": "3",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": -8051007.2142307358,
+    "y": 2105384.1831189534
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 20487,
+    "iso3": null,
+    "pcode": null,
+    "name": "Port-à-Piment",
+    "gis_name": "Hôpital Port à Piment",
+    "type": "project",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499259747000,
+    "globalid": "{75CB33EB-63DA-413F-A85B-0AD2D8EAF03F}",
+    "operational_center": "ocb",
+    "project_code": "HT1-59",
+    "note": null,
+    "cell": "3",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": -8238167.4931129897,
+    "y": 2059598.0090262601
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13561,
+    "iso3": "bdi",
+    "pcode": "bdi000002",
+    "name": "Bujumbura",
+    "gis_name": "Burundi pre allocated VIOLENCE",
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499260009000,
+    "globalid": "{BD80864C-BAB5-4A6F-A7C3-AE3ADAA471CC}",
+    "operational_center": "ocb",
+    "project_code": "BI1-26",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3268326.7239271053,
+    "y": -374401.86713126488
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 20483,
+    "iso3": null,
+    "pcode": null,
+    "name": "Bujumbura",
+    "gis_name": null,
+    "type": "coordination",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499260026000,
+    "globalid": "{91DBAAD1-BA71-4933-8427-E37B97B33B32}",
+    "operational_center": "ocb",
+    "project_code": "BI1-01",
+    "note": null,
+    "cell": "e-pool",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": 3266888.731139007,
+    "y": -379416.22108440963
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 20488,
+    "iso3": null,
+    "pcode": null,
+    "name": "Sadr City Bagdad",
+    "gis_name": "Sadr City",
+    "type": "project",
+    "source": null,
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499269626000,
+    "globalid": "{0495598A-F363-4DF7-A23E-7CE18B4C6986}",
+    "operational_center": "ocb",
+    "project_code": "IQ1-31",
+    "note": null,
+    "cell": "6",
+    "geo_precision": null
+   },
+   "geometry": {
+    "x": 4946807.5910069356,
+    "y": 3946296.5604539108
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13644,
+    "iso3": "irq",
+    "pcode": null,
+    "name": "Bagdad",
+    "gis_name": "Coordination Iraq",
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1499269674000,
+    "globalid": "{E6C8B2B5-44B0-4DAB-99E6-250A68916EBA}",
+    "operational_center": "ocb",
+    "project_code": "IQ1-01",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4936232.9444792299,
+    "y": 3937388.992344026
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13625,
+    "iso3": "lbn",
+    "pcode": "lbn000004",
+    "name": "Ain Al Hilweh",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1499937355000,
+    "globalid": "{DCE86990-A137-471D-9F30-F909969627A3}",
+    "operational_center": "ocb",
+    "project_code": "LB1-21",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "approx"
+   },
+   "geometry": {
+    "x": 3938300.1297451919,
+    "y": 3967386.7589713577
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13669,
+    "iso3": "lbn",
+    "pcode": "lbn000007",
+    "name": "Beirut refugees Shatila",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1499937355000,
+    "globalid": "{40917892-475A-411D-8E43-E1F908244C8D}",
+    "operational_center": "ocb",
+    "project_code": "LB1-12",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3951793.1652242476,
+    "y": 4010525.2393098995
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 22480,
+    "iso3": "lbn",
+    "pcode": "lbn000011",
+    "name": "Wadi Khaled",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1499937355000,
+    "globalid": "{965A726A-4A6A-45A4-911B-355748A11B7E}",
+    "operational_center": "ocb",
+    "project_code": null,
+    "note": null,
+    "cell": null,
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4050835.6130962111,
+    "y": 4112709.8127077785
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13671,
+    "iso3": "lbn",
+    "pcode": "lbn000008",
+    "name": "PHC in NE Akker",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1499937355000,
+    "globalid": "{45D8F53A-C93A-41B8-9281-C9C32BD82A00}",
+    "operational_center": "ocb",
+    "project_code": "LB1-18",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 4038972.5791610349,
+    "y": 4105089.8837296595
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13642,
+    "iso3": "lbn",
+    "pcode": "lbn000005",
+    "name": "coordination Beirut",
+    "gis_name": null,
+    "type": "coordination",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1499937355000,
+    "globalid": "{78BD45CC-4D37-475C-898D-DDDBA250D06A}",
+    "operational_center": "ocb",
+    "project_code": "LB1-01",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3953114.5275799618,
+    "y": 4013870.8173021795
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 22481,
+    "iso3": "lbn",
+    "pcode": "lbn000010",
+    "name": "Borj El Barajneh",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1499937355000,
+    "globalid": "{313B64A8-7AC6-4B7D-B0FC-5252029B4F6C}",
+    "operational_center": "ocb",
+    "project_code": null,
+    "note": null,
+    "cell": null,
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3952070.3383998531,
+    "y": 4008469.5363728595
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13670,
+    "iso3": "lbn",
+    "pcode": "lbn000009",
+    "name": "Bar Elias Hospital",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1501664601000,
+    "globalid": "{C1BE8107-5115-4DB1-81B1-0CCBF41F7BA9}",
+    "operational_center": "ocb",
+    "project_code": "LB1-14",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3996476.2177221663,
+    "y": 3998419.689041113
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 23281,
+    "iso3": "lbn",
+    "pcode": null,
+    "name": "Bar Elias office",
+    "gis_name": null,
+    "type": "hq",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "SDE",
+    "editdate": 1501664719000,
+    "globalid": "{6938782F-341B-4C0A-B4EC-E781355589C9}",
+    "operational_center": "ocb",
+    "project_code": "LB1-12",
+    "note": null,
+    "cell": null,
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3997560.1958278646,
+    "y": 3997630.9964024634
+   }
+  },
+  {
+   "attributes": {
+    "objectid": 13668,
+    "iso3": "lbn",
+    "pcode": "lbn000006",
+    "name": "Support Syria from Lebanon",
+    "gis_name": null,
+    "type": "project",
+    "source": "msf",
+    "statut": 1,
+    "editedby": "wrl_offices_ocb_user",
+    "editdate": 1507218904000,
+    "globalid": "{EE45A466-B1DF-4A9D-B407-887E9A87F3EF}",
+    "operational_center": "ocb",
+    "project_code": "LB1-13",
+    "note": null,
+    "cell": "6",
+    "geo_precision": "gps"
+   },
+   "geometry": {
+    "x": 3953788.0401102444,
+    "y": 4008799.9446143899
+   }
+  }
+ ]
+}

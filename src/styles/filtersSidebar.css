@@ -1,0 +1,81 @@
+#filter-sidebar-container {
+  position: absolute;
+  top: 6.1rem;
+  height: calc(100vh - 6.6rem);
+  left: .5rem;
+  padding: 2px;
+  width: 20%;
+}
+
+#accordion-mission, #accordion-project {
+  overflow: auto;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+.accordion-item {
+  background-color: #fff;
+  padding: 0;
+  border-bottom: 1px solid rgba(134, 142, 150, 0.5); 
+}
+
+.accordion-item:last-child {
+  border-bottom: none; 
+}
+
+a.filter-link {
+  display: block;
+  padding: 1rem;
+}
+
+a.filter-link:hover {
+  text-decoration: none;
+}
+
+.filter-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.current-filter-item {
+  font-size: 1.2rem;
+  color: rgba(209, 33, 33, 1);
+}
+
+ul.filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.filter-list li {
+  padding: .3rem 1rem;
+}
+
+ul.filter-list li:hover {
+  background-color: rgba(209, 33, 33, 0.1);
+}
+
+.current-mission,
+.current-project,
+ul.filter-list li.current-mission:hover,
+ul.filter-list li.current-project:hover {
+  background-color: rgba(209, 33, 33, 1);
+  color: #fff;
+}
+
+a.mission-link, a.project-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.accordion-item.disabled a {
+  pointer-events: none;
+}
+
+.accordion-item.disabled .filter-name,
+.accordion-item.disabled .current-filter-item {
+  color: #868e96;
+}

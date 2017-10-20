@@ -1,9 +1,8 @@
 'use strict';
-
+import '../styles/app.css';
 import h from 'snabbdom/h';
 import navbar from './navbar';
-import webmap from './webmap';
-import layerSwitcher from './layerSwitcher';
+import modal from './modal';
 import home from './home';
 import ops from './ops';
 import notFound from './notFound';
@@ -13,13 +12,19 @@ function view(model, handler) {
   console.log(model);
 
   const router = {'home': home, 'ops': ops, '404': notFound};
+  const tab = router[model.currentTab]; 
 
-  // router[model.currentTab].view(model, handler)
+  if(model.loadingData) {
+    return h('div#app', [
+      navbar.view(model, handler),
+      modal.view(model, handler)
+    ]);
+  }
 
   return h('div#app', [
     navbar.view(model, handler),
-    webmap.view(model, handler),
-    layerSwitcher.view(model, handler)
+    h('main', tab.view(model, handler)),
+    modal.view(model, handler)
   ]);
 }
 

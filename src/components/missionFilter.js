@@ -30,7 +30,7 @@ function view(model, handler) {
       attrs: { href: '#accordion-mission', 'aria-expanded': 'true', 'aria-controls': 'accordion' },
       dataset: { toggle: 'collapse', parent: '#accordion' }
     }, [
-      h('div.filter-name','Missions'),
+      h('div.filter-name','Mission'),
       h('div.current-filter-item', currMission)
     ]),
     h('div#accordion-mission.collapse.show', { attrs: { role: 'tabpanel' } }, [

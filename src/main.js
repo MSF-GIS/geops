@@ -9,15 +9,17 @@ import routes from './routes';
 import { setCurrentTab, setPresences, setProjects, setExtents } from './actions';
 import app from './components/app';
 import { sendXHR, parseInteger } from './util';
-import { getMissionFromLevel } from './helpers';
+import { getMissionFromLevel, getAdditionalFilters, setAdditionalFiltersColors } from './helpers';
 import { GLOBAL_LEVEL, MISSION_LEVEL, PROJECT_LEVEL, ALL_MISSIONS, ALL_PROJECTS } from './variables';
+import { defaultIndicators } from './indicators';
 
 const patch = init([
   require('snabbdom/modules/class').default,
   require('snabbdom/modules/props').default,
   require('snabbdom/modules/eventlisteners').default,
   require('snabbdom/modules/attributes').default,
-  require('snabbdom/modules/dataset').default
+  require('snabbdom/modules/dataset').default,
+  require('snabbdom/modules/style').default
 ]);
 
 const firstState = {
@@ -31,7 +33,11 @@ const firstState = {
   projects: null,
   extents: null,
   missions: null,
-  level: GLOBAL_LEVEL
+  level: GLOBAL_LEVEL,
+  indicator: '',
+  additionalFilters: { types: [], contexts: [] },
+  colors: {},
+  updateVectorLayer: true
 };
 
 function route(handler) {
@@ -72,9 +78,18 @@ function cleanPresences(presences, projects) {
 
 function reduce(state, action) {
 
+  function reset(state) {
+    state.updateVectorLayer = false;
+    return state;
+  }
+
+  state = reset(state);
+
   switch (action.type) {
     case 'SET_CURRENT_TAB':
       state.currentTab = action.payload;
+      state.indicator = defaultIndicators[state.currentTab];
+      state.updateVectorLayer = true;
       return state;
     case 'SET_LAYER_SWITCHER_COLLAPSED':
       state.layerSwitcherCollapsed = action.payload;
@@ -90,24 +105,33 @@ function reduce(state, action) {
       state.projects = action.payload;
       state.presences = cleanPresences(state.presences, state.projects);
       state.missions = getMissions(state.projects);
+      state.additionalFilters = getAdditionalFilters(state.projects);
+      state.colors = setAdditionalFiltersColors(state.additionalFilters, state.colors);
       state.modalMsg = 'Load countries data ...';
       return state;
     case 'SET_EXTENTS':
       state.extents = action.payload;
       state.loadingData = false;
       state.openModal = false;
+      state.updateVectorLayer = true;
       return state;
     case 'SET_MISSION':
       state.level = action.payload === ALL_MISSIONS ? GLOBAL_LEVEL : MISSION_LEVEL + '@@' + action.payload;
+      state.updateVectorLayer = true;
       return state;
     case 'SET_PROJECT':
       const mission = getMissionFromLevel(state.level);
-
-      console.log(ALL_PROJECTS);
-      console.log(action.payload);
-
       const allProjects = action.payload === ALL_PROJECTS;
       state.level = allProjects ? MISSION_LEVEL + '@@' + mission : PROJECT_LEVEL + '@@' + mission + '@@' + action.payload;
+      state.updateVectorLayer = true;
+      return state;
+    case 'SET_INDICATOR':
+      state.indicator = action.payload;
+      state.updateVectorLayer = true;
+      return state;
+    case 'SET_ADDITIONAL_FILTERS':
+      state.additionalFilters = action.payload;
+      state.updateVectorLayer = true;
       return state;  
   }
 

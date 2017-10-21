@@ -1,0 +1,46 @@
+#add-filters-sidebar {
+  position: absolute;
+  top: 6.1rem;
+  max-height: calc(100vh - 6.6rem);
+  overflow: auto;
+  right: .5rem;
+  padding: 2px;
+  width: 13%;
+}
+
+#add-filters-form {
+	background-color: #fff;
+	padding: 0.7rem;
+}
+
+#add-filters-form fieldset {
+	margin-bottom: 0.5rem;
+}
+
+#add-filters-form legend {
+  font-size: 1.2rem;
+  color: rgba(209, 33, 33, 1);
+  margin-bottom: 0;
+}
+
+#add-filters-form .form-check {
+	margin-bottom: 0;
+}
+
+#add-filters-form input {
+	position: relative;
+	top: 0.2rem;
+	margin-right: 0.2rem;
+}
+
+.fill-color, .stroke-color {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 0.2rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+

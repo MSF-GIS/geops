@@ -40,7 +40,8 @@
     "ol.Collection#getArray",
     "ol.Collection#getArray",
     "ol.geom.Point#getCoordinates",
-    "ol.extent.boundingExtent"
+    "ol.extent.boundingExtent",
+    "ol.style.Circle#setOpacity"
   ],
   "umd": true,
   "compile": {

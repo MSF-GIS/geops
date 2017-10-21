@@ -55,3 +55,17 @@ export function setExtents(extents) {
     payload: extents
   }
 }
+
+export function setIndicator(indicator) {
+  return {
+    type: 'SET_INDICATOR',
+    payload: indicator
+  }
+}
+
+export function setAdditionalFilters(filters) {
+  return {
+    type: 'SET_ADDITIONAL_FILTERS',
+    payload: filters
+  }
+}

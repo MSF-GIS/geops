@@ -4,10 +4,10 @@
   height: calc(100vh - 6.6rem);
   left: .5rem;
   padding: 2px;
-  width: 20%;
+  width: 12%;
 }
 
-#accordion-mission, #accordion-project {
+#accordion-mission, #accordion-project, #accordion-indicator {
   overflow: auto;
   max-height: 40vh;
   overflow: auto;
@@ -25,7 +25,7 @@
 
 a.filter-link {
   display: block;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 a.filter-link:hover {
@@ -60,13 +60,15 @@ ul.filter-list li:hover {
 
 .current-mission,
 .current-project,
+.current-indicator,
 ul.filter-list li.current-mission:hover,
-ul.filter-list li.current-project:hover {
+ul.filter-list li.current-project:hover,
+ul.filter-list li.current-indicator:hover {
   background-color: rgba(209, 33, 33, 1);
   color: #fff;
 }
 
-a.mission-link, a.project-link {
+a.mission-link, a.project-link, a.indicator-link {
   color: #000;
   text-decoration: none;
 }

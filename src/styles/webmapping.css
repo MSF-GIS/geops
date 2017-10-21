@@ -4,6 +4,8 @@
 }
 
 .ol-control button {
+  background-color: transparent;
+  border-radius: 0;
   background-color: rgba(209,33,33,.5);
 }
 
@@ -13,8 +15,8 @@
 
 .ol-zoom {
   top: .5rem;
-  right: .5rem;
-  left: unset;
+  left: calc(12% + 1rem);
+  right: unset;
 }
 
 .ol-control button {

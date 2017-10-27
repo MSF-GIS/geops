@@ -2,7 +2,7 @@
 
 import { GLOBAL_LEVEL, MISSION_LEVEL, PROJECT_LEVEL } from '../variables';
 import { getMissionFromLevel, getProjectFromLevel } from '../helpers';
-import typeGroups from '../typeGroups';
+import { typeGroups, contextGroups } from '../groups';
 
 function all(model, feature) {
   return true;
@@ -23,15 +23,22 @@ function filterByCurrentProject(model, feature) {
 }
 
 function filterByTypeAndContext(model, feature) {
-  const keys = Object.keys(typeGroups);
-  const group = keys.reduce((acc, curr) => {
+  const typeKeys = Object.keys(typeGroups);
+  const typeGroup = typeKeys.reduce((acc, curr) => {
     typeGroups[curr].forEach(item => { acc[item] = curr });
     return acc;
   }, {});
 
-  const type = group[feature.get('type')] || feature.get('type');
+  const contextKeys = Object.keys(contextGroups);
+  const contextGroup = contextKeys.reduce((acc, curr) => {
+    contextGroups[curr].forEach(item => { acc[item] = curr });
+    return acc;
+  }, {});
+
+  const type = typeGroup[feature.get('type')] || feature.get('type');
+  const context = contextGroup[feature.get('context')] || feature.get('context');
   const keepType = model.additionalFilters.types.indexOf(type) > -1;
-  const keepContext = model.additionalFilters.contexts.indexOf(feature.get('context')) > -1;
+  const keepContext = model.additionalFilters.contexts.indexOf(context) > -1;
   return keepType && keepContext;
 }
 

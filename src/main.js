@@ -2,14 +2,20 @@
 
 import 'bootstrap/js/dist/util';
 import 'bootstrap/js/dist/collapse';
-import {init} from 'snabbdom';
+import { init } from 'snabbdom';
 import h from 'snabbdom/h';
 import PubSub from './PubSub';
 import routes from './routes';
-import { setCurrentTab, setPresences, setProjects, setExtents } from './actions';
+import { setCurrentTab, setPresences, setProjects, setExtents, setFinancials } from './actions';
 import app from './components/app';
 import { sendXHR, parseInteger } from './util';
-import { getMissionFromLevel, getAdditionalFilters, setAdditionalFiltersColors } from './helpers';
+import { 
+  getMissionFromLevel,
+  getAdditionalFilters,
+  setAdditionalFiltersColors,
+  getProjectsFromData,
+  mergeProjectsAndFinancials,
+  getMissions } from './helpers';
 import { GLOBAL_LEVEL, MISSION_LEVEL, PROJECT_LEVEL, ALL_MISSIONS, ALL_PROJECTS } from './variables';
 import { defaultIndicators } from './indicators';
 
@@ -29,7 +35,7 @@ const firstState = {
   loadingData: true,
   openModal: true,
   modalMsg: 'Loading MSF presence ...',
-  presences: null,
+  /*presences: null,*/
   projects: null,
   extents: null,
   missions: null,
@@ -37,7 +43,8 @@ const firstState = {
   indicator: '',
   additionalFilters: { types: [], contexts: [] },
   colors: {},
-  updateVectorLayer: true
+  updateVectorLayer: true,
+  updateMapView: true
 };
 
 function route(handler) {
@@ -46,7 +53,7 @@ function route(handler) {
     .filter(r => r.id === routeId);  
 
   if(routeId === '' || routeId === '#') {
-    handler.publish('ACTIONS', setCurrentTab('home'));
+    handler.publish('ACTIONS', setCurrentTab('ops'));
     return;    
   }
 
@@ -58,15 +65,7 @@ function route(handler) {
   handler.publish('ACTIONS', setCurrentTab(tempRoutes[0].id));
 }
 
-function getMissions(projects) {
-  return projects.reduce((acc, curr) => {
-    const missionName = curr['Mission'];
-    const mission = acc[missionName] || { name: missionName, budget: 0};
-    mission.budget = mission.budget + parseInteger(curr['Initial 2017 (Euro)']);
-    acc[missionName] = mission;
-    return acc;
-  }, {});
-}
+/*
 
 function cleanPresences(presences, projects) {
   const projectsCodes = projects.map(p => p['Project code']);
@@ -75,11 +74,13 @@ function cleanPresences(presences, projects) {
   presences.features = cleanedFeatures;
   return presences;
 }
+*/
 
 function reduce(state, action) {
 
   function reset(state) {
     state.updateVectorLayer = false;
+    state.updateMapView = false;
     return state;
   }
 
@@ -90,6 +91,7 @@ function reduce(state, action) {
       state.currentTab = action.payload;
       state.indicator = defaultIndicators[state.currentTab];
       state.updateVectorLayer = true;
+      state.updateMapView = true;
       return state;
     case 'SET_LAYER_SWITCHER_COLLAPSED':
       state.layerSwitcherCollapsed = action.payload;
@@ -99,11 +101,18 @@ function reduce(state, action) {
       return state;     
     case 'SET_PRESENCES':
       state.presences = action.payload;
-      state.modalMsg = 'Load MSF projects ...';
+      state.modalMsg = 'Load projects data ...';
       return state;
     case 'SET_PROJECTS':
-      state.projects = action.payload;
+      state.projects = getProjectsFromData(action.payload);
+      /*
       state.presences = cleanPresences(state.presences, state.projects);
+      state.missions = getMissions(state.projects);
+      */
+      state.modalMsg = 'Load financials data ...';
+      return state;
+    case 'SET_FINANCIALS':
+      state.projects = mergeProjectsAndFinancials(state.projects, action.payload);
       state.missions = getMissions(state.projects);
       state.additionalFilters = getAdditionalFilters(state.projects);
       state.colors = setAdditionalFiltersColors(state.additionalFilters, state.colors);
@@ -114,10 +123,12 @@ function reduce(state, action) {
       state.loadingData = false;
       state.openModal = false;
       state.updateVectorLayer = true;
+      state.updateMapView = true;
       return state;
     case 'SET_MISSION':
       state.level = action.payload === ALL_MISSIONS ? GLOBAL_LEVEL : MISSION_LEVEL + '@@' + action.payload;
       state.updateVectorLayer = true;
+      state.updateMapView = true;
       return state;
     case 'SET_PROJECT':
       const mission = getMissionFromLevel(state.level);
@@ -142,8 +153,8 @@ function manageIO(state, handler) {
 
   // Mettre les post traitements dans des helpers
 
-
   if(state.loadingData) {
+    /*
     if(state.presences === null) {
       sendXHR('/data/presences.json', ev => {
         const presences = JSON.parse(ev.target.responseText);
@@ -152,12 +163,21 @@ function manageIO(state, handler) {
         presences.features = validFeatures;  
         handler.publish('ACTIONS', setPresences(presences));
       }); 
-    } else if(state.projects === null) {
+    }
+    */
+    if(state.projects === null) {
       sendXHR('/data/projects.json', ev => {
-        const projects = JSON.parse(ev.target.responseText);
+        const projectsData = JSON.parse(ev.target.responseText);
+        /*
         const projectCodes = state.presences.features.map(f => f.attributes.project_code);
         const validProjects = projects.filter(p => projectCodes.indexOf(p['Project code']) > -1);
-        handler.publish('ACTIONS', setProjects(validProjects));
+        */
+        handler.publish('ACTIONS', setProjects(projectsData));
+      });
+    } else if(state.missions === null) {  
+      sendXHR('/data/financials.json', ev => {
+        const financialsData = JSON.parse(ev.target.responseText);
+        handler.publish('ACTIONS', setFinancials(financialsData));
       });
     } else if(state.extents == null) {
       sendXHR('/data/extents.json', ev => {

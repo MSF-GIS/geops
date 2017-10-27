@@ -1,7 +1,7 @@
 #add-filters-sidebar {
   position: absolute;
   top: 6.1rem;
-  max-height: calc(100vh - 6.6rem);
+  max-height: calc(100vh - 8.6rem);
   overflow: auto;
   right: .5rem;
   padding: 2px;
@@ -41,6 +41,6 @@
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 

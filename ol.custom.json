@@ -14,6 +14,7 @@
     "ol.Feature#setProperties",
     "ol.Feature#getProperties",
     "ol.Feature#setStyle",
+    "ol.Feature#setGeometry",
     "ol.source.Vector",
     "ol.source.Vector#getFeatures",
     "ol.source.Vector#getExtent",

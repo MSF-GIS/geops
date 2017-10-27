@@ -1,0 +1,23 @@
+
+#dataviz-container {
+  width: 100%;
+  min-height: 20vh;
+  padding: 1rem;
+}
+
+#budget-part-type-viz .bar {
+  fill: steelblue;
+}
+
+#budget-part-type-viz .axis path {
+  display: none;
+}
+
+#budget-part-type-viz .serie {
+  opacity: 0.8;
+}
+
+#budget-part-type-viz .legend-color rect {
+  opacity: 0.8;
+}
+

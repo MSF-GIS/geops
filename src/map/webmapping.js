@@ -54,15 +54,27 @@ function updateBaseLayer(map, title) {
   }
 }
 
-function loadData(map, presences, projects) {
+function loadData(map, missions, projects) {
   const layers = map.getLayers().getArray();
   const projectsLayer = layers.filter(l => l.get('title') === 'Projects')[0];
   const projectsSource = projectsLayer.getSource();
 
-  if(projectsSource.getFeatures().length === 0 && presences !== null && projects !== null) {
- 
+  if(projectsSource.getFeatures().length === 0 && missions && projects) {
+
+    /*
     const format = new ol.format.EsriJSON();
     const baseFeatures = format.readFeatures(presences);
+    */
+
+    const features = projects.map(p => {
+      const geom =  new ol.geom.Point(ol.proj.transform([p.lon, p.lat], 'EPSG:4326', 'EPSG:3857'));
+      const feature = new ol.Feature(); 
+      feature.setGeometry(geom);
+      feature.setProperties(p);
+      return feature;  
+    })
+
+    /*
 
     const features = baseFeatures.map(f => {
       const tmpProjects = projects.filter(p => p['Project code'] === f.get('project_code'));
@@ -78,6 +90,7 @@ function loadData(map, presences, projects) {
       }
       return f;
     });
+    */
 
     projectsSource.addFeatures(features);
   } 
@@ -97,8 +110,9 @@ function updateVectorLayer(map, model) {
     }
 
     const fitCountry = function(fs, map, model) {
-      const mission = getMissionFromLevel(model.level);
-      const extent = model.extents.filter(e => e.name.toUpperCase() === mission.toUpperCase())[0].extent; 
+      const missionName = getMissionFromLevel(model.level);
+      const mission = model.missions[missionName];
+      const extent = model.extents.filter(e => e.ISO === mission.ISO3)[0].extent; 
       map.getView().fit(ol.proj.transformExtent(extent,'EPSG:4326','EPSG:3857'));
     }
 
@@ -124,17 +138,18 @@ function updateVectorLayer(map, model) {
     features.forEach(f => { f.setStyle(hide); });
     featuresToKeep.forEach(f => f.setStyle(style.bind(this, model)));
 
-    const transition = transitions[level].bind(this, featuresToKeep, map, model);
-    transition();
+    if(model.updateMapView) {
+      const transition = transitions[level].bind(this, featuresToKeep, map, model);
+      transition();
+    }
   }
-
 }
 
 function update(model, handler) {
   
   if(map !== null) {
     
-    loadData(map, model.presences, model.projects);
+    loadData(map, model.missions, model.projects);
 
     updateBaseLayer(map, model.layerSwitcherChecked);
 

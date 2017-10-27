@@ -9,8 +9,15 @@ export function sendXHR(url, callBack) {
 }
 
 export function parseInteger(string) {
+  if(Number.isInteger(string)) {
+  	return string;
+  }
+
   if(string === '') {
     return 0;
   }
+
+  // console.log(string);
+
   return parseInt(string.replace(/,/g, ''));  
 }

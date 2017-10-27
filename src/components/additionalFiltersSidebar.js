@@ -2,7 +2,7 @@
 
 import '../styles/additionalFiltersSidebar.css';
 import h from 'snabbdom/h';
-import typeGroups from '../typeGroups';
+import { typeGroups, contextGroups } from '../groups';
 import { setAdditionalFilters } from '../actions';
 
 function onChange(handler, ev) {
@@ -28,29 +28,35 @@ function mapTypeCheckboxItem(colors, item) {
 
 function mapContextCheckboxItem(colors, item) {
   const colorKey = 'contexts@' + item;
-  const colorBorder = '1px solid ' + colors[colorKey];
+  const border = '2px solid ' + colors[colorKey];
   return h('div.form-check',[
     h('label.form-check-label',[
       h('input.form-check-input', { attrs: { type: 'checkbox', value: item, checked: true } }),
-      h('div.stroke-color', { style: { 'border': colorBorder } }),
+      h('div.stroke-color', { style: { 'border': border } }),
       item
     ])      
   ]);
 }
 
 function view(model, handler) {
-  const keys = Object.keys(typeGroups);
-  const group = keys.reduce((acc, curr) => {
+  const typeKeys = Object.keys(typeGroups);
+  const typeGroup = typeKeys.reduce((acc, curr) => {
     typeGroups[curr].forEach(item => { acc[item] = curr });
     return acc;
   }, {});
 
-  const tempTypes = model.projects.map(p => group[p['definition project']] || p['definition project']);
+  const contextKeys = Object.keys(contextGroups);
+  const contextGroup = contextKeys.reduce((acc, curr) => {
+    contextGroups[curr].forEach(item => { acc[item] = curr });
+    return acc;
+  }, {});  
+
+  const tempTypes = model.projects.map(p => typeGroup[p.type] || p.type);
   const types = tempTypes.filter((p, pos, array) => array.indexOf(p) === pos);
   const typeItems = types.map(mapTypeCheckboxItem.bind(this, model.colors));
   typeItems.unshift(h('legend', 'Types'));
 
-  const tempContexts = model.projects.map(p => p.conflict);
+  const tempContexts = model.projects.map(p => contextGroup[p.context] || p.context);
   const contexts = tempContexts.filter((p, pos, array) => array.indexOf(p) === pos);
   const contextItems = contexts.map(mapContextCheckboxItem.bind(this, model.colors));
   contextItems.unshift(h('legend', 'Contexts'));

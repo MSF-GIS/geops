@@ -10,4 +10,3 @@ function view(model, handler, children) {
 }
 
 export default { view };
-

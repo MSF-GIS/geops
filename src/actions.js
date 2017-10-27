@@ -69,3 +69,10 @@ export function setAdditionalFilters(filters) {
     payload: filters
   }
 }
+
+export function setFinancials(financials) {
+  return {
+    type: 'SET_FINANCIALS',
+    payload: financials
+  } 
+}

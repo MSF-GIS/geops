@@ -1,0 +1,46 @@
+#options-control {
+  top: 8rem;
+  left: calc(12% + 1rem);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#options-control ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 2px;
+  padding: 0;
+  vertical-align: top;
+}
+
+#options-control li {
+  font-size: 0.9rem;
+  padding:  0 0.5rem;
+  margin-bottom: 2px;
+  background-color: rgba(209,33,33,.5);
+  color: white;
+}
+
+#options-control li:hover {
+  background-color: rgba(209,33,33,.7);
+}
+
+
+#options-control .form-check {
+  margin-bottom: 0;
+}
+
+#options-control label {
+  /*width: 7rem;*/
+  padding-bottom: 4px;
+}
+
+#options-control input {
+  position: relative;
+  top: 2px;
+  margin-right: 0.3rem;
+}
+
+#options-control-button {
+  font-size: 0.8rem;
+  display: inline-block;
+}

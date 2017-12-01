@@ -63,16 +63,38 @@ export function setIndicator(indicator) {
   }
 }
 
-export function setAdditionalFilters(filters) {
-  return {
-    type: 'SET_ADDITIONAL_FILTERS',
-    payload: filters
-  }
-}
-
 export function setFinancials(financials) {
   return {
     type: 'SET_FINANCIALS',
     payload: financials
   } 
+}
+
+export function openPopup(data) {
+  return {
+    type: 'OPEN_POPUP',
+    payload: {
+      data: data
+    }
+  } 
+}
+
+export function closePopup() {
+  return {
+    type: 'CLOSE_POPUP'
+  } 
+}
+
+export function setFilter(filter) {
+  return {
+    type: 'SET_FILTER',
+    payload: filter
+  }
+}
+
+export function setBudgetDisplay(display) {
+  return {
+    type: 'SET_BUDGET_DISPLAY',
+    payload: display
+  }
 }

@@ -1,5 +1,7 @@
 'use strict';
 
+// Heavily inspire on https://github.com/mroderick/PubSubJS/
+
 const messages = {};
 let lastUid = -1;
 
@@ -29,4 +31,17 @@ function publish(message, data) {
   }
 }
 
-export default { publish, subscribe };
+function unsubscribe(token) {
+  for (let m in messages ){
+    if ( messages.hasOwnProperty( m ) ){
+      let message = messages[m];
+      if ( message[token] ){
+        delete message[token];
+        // tokens are unique, so we can just stop here
+        break;
+      }        
+    }
+  }
+}
+
+export default { publish, subscribe, unsubscribe };

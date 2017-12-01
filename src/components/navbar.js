@@ -19,7 +19,7 @@ function view(model, handler) {
     ])
   });
 
-  return h('nav.navbar.navbar-expand-lg.navbar-dark.bg-dark', [
+  return h('nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top', [
     h('a.navbar-brand', { attrs: { href: '#home' } }, [
       h('img', { attrs: { src: '/images/gis_logo.png', alt:'GIS logo' } })
     ]),

@@ -27,3 +27,124 @@
 .ol-attribution.ol-uncollapsible {
   height: unset;
 }
+
+#scroll-control-button {
+  top: calc(100vh - 7.6rem);
+  left: calc(50vw - 3rem);
+  height: 2rem;
+  width: 6rem;
+  background-color: rgba(209, 33, 33, 0.7);
+  color: white;
+  border-radius: 0;
+  font-size: 1.2rem;
+}
+
+#scroll-control-button:hover {
+  background-color: rgba(209, 33, 33, 0.9);
+}
+
+#scroll-control-button:focus {
+  box-shadow: unset;
+}
+
+#export-control {
+  top: 6rem;
+  left: calc(12% + 1rem);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#export-control ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 1px;
+  padding: 0;
+  vertical-align: top;
+}
+
+#export-control li {
+  margin-bottom: 2px;
+}
+
+#export-control ul button {
+  width: 8rem;
+  font-size: 0.8rem;
+  padding:  0 0.5rem;
+}
+
+#export-control-button {
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
+}
+
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+
+.ol-popup-closer:after {
+  color: black;
+  content: "✖";
+}
+
+#popup-closer:hover {
+  text-decoration: none;
+}
+
+#popup-content ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 8px;
+}
+
+#popup-content li {
+  margin-bottom: 4px;
+}
+
+#popup-content h4 {
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(209,33,33,.3);
+}
+
+#popup {
+  min-width: 200px;
+  background-color: #fff;
+}

@@ -2,10 +2,12 @@
 
 export const indicators = {
   'home': [''],
-  'ops': ['Type of projects', 'Default/choice']
+  'ops': ['Type of projects', 'Default/choice'],
+  'hr': ['Global Workforce']
 };
 
 export const defaultIndicators = {
   'home': '',
-  'ops': 'Type of projects'
+  'ops': 'Type of projects',
+  'hr': 'Global Workforce'
 };

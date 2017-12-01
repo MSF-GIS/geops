@@ -1,74 +1,59 @@
 'use strict';
 
-import '../styles/viz.css';
-import { typeGroups } from '../groups';
-import { parseInteger } from '../util';
+import '../../styles/viz.css';
 import { select } from 'd3-selection';
 import { scaleBand, scaleLinear } from 'd3-scale';
 import { stack, stackOffsetExpand } from 'd3-shape';
 import { axisBottom, axisLeft } from 'd3-axis';
+import PubSub from '../../PubSub';
+import { typeColors } from '../../variables';
+import { parseInteger } from '../../util';
 
 const MARGIN_TOP = 20;
 const MARGIN_RIGHT = 160;
 const MARGIN_BOTTOM = 30;
 const MARGIN_LEFT = 40;
 
-let svg = null,
-  g = null,
-  width = null,
-  height = null,
-  x = null,
-  y = null,
-  legend = null;
+export default function(model) {
 
-function init(model, handler, ev) {
-  svg = select('svg#budget-part-type-viz');
-  g = svg.append('g')
-      .attr('transform', 'translate(' + MARGIN_LEFT + ',' + MARGIN_TOP + ')');
+  const svg = select('div#dataviz-container')
+    .append('svg')
+    .attr('width', 300)
+    .attr('height', 500);
+
+  const g = svg.append('g')
+    .attr('transform', 'translate(' + MARGIN_LEFT + ',' + MARGIN_TOP + ')');
   
-  width = +svg.attr('width') - MARGIN_LEFT - MARGIN_RIGHT;
-  height = +svg.attr('height') - MARGIN_TOP - MARGIN_BOTTOM;
+  const width = +svg.attr('width') - MARGIN_LEFT - MARGIN_RIGHT;
+  const height = +svg.attr('height') - MARGIN_TOP - MARGIN_BOTTOM;
 
-  x = scaleBand()
+  const x = scaleBand()
     .rangeRound([0, width])
     .padding(0.1)
     .align(0.1);
 
-  y = scaleLinear()
+  const y = scaleLinear()
     .rangeRound([height, 0]);
 
   g.append('g')
     .attr('class', 'axis axis--y')
     .call(axisLeft(y).ticks(10, '%'));
 
-  legend = g.append('g')
+  const legend = g.append('g')
       .attr('font-family', 'sans-serif')
       .attr('font-size', 10)
       .attr('text-anchor', 'end');
 
-  update(model, handler);
+  update(model);    
 
-  // Pour ne pas à avoir de garder de variable globale, essayer de trouver une solution qui tire
-  // profit du scope
+  function update(model) {
 
-}
-
-function update(model, handler) {
-
-  if(svg !== null) {
-    const keys = Object.keys(typeGroups);
-    const group = keys.reduce((acc, curr) => {
-      typeGroups[curr].forEach(item => { acc[item] = curr });
-      return acc;
-    }, {});
-
-    const filteredProjects = model.projects.filter(p => {
-      const type = group[p.type] || p.type;
-      return model.additionalFilters.types.indexOf(type) > -1;
-    });
+    const filteredProjects = !model.filters['superType'] ? model.projects
+      : model.projects
+        .filter(p => model.filters['superType'].indexOf(p.superType) < 0 );
 
     const types = filteredProjects.reduce((acc, curr) => {
-      const type = group[curr.type] || curr.type;
+      const type = curr.superType;
       const value = (curr.financial.initial + curr.financial.COPRO);
       const tmpArr = acc.filter(i => i.type === type);
 
@@ -103,7 +88,7 @@ function update(model, handler) {
       .data(st.keys(typeKeys)(data))
       .enter().append('g')
         .attr('class', 'serie')
-        .attr('fill', d => model.colors['types@' + d.key])
+        .attr('fill', d => typeColors[d.key]);
 
     serie.selectAll('rect')
       .data(d => d)  
@@ -128,7 +113,7 @@ function update(model, handler) {
       .attr('x', width + MARGIN_RIGHT - 19)
       .attr('width', 19)
       .attr('height', 19)
-      .attr('fill', d => model.colors['types@' + d.key]);
+      .attr('fill', d => typeColors[d.key]);
 
     items.append('text')
       .attr('x', width + MARGIN_RIGHT - 24)
@@ -138,12 +123,19 @@ function update(model, handler) {
   
     items.exit().remove();
   }
-}
 
-function destroy() {
-  // Verifier que la mémoire est bien libérée pour les constante une fois que le module est détruit
-  console.log('destroy viz');
-  svg = null; 
-}
+  const token = PubSub.subscribe('STATE', (evt, payload) => {
+    switch(payload.key) {
+      case 'filters':
+        update(payload.appState);
+        break;    
+    }
+  });
 
-export default { init, update, destroy }
+  return {
+    destroy: () => {
+      PubSub.unsubscribe(token);
+      svg.remove();
+    }
+  }
+}

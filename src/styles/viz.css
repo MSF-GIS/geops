@@ -5,19 +5,28 @@
   padding: 1rem;
 }
 
-#budget-part-type-viz .bar {
+svg#budget-part-type-viz .bar {
   fill: steelblue;
 }
 
-#budget-part-type-viz .axis path {
+svg#budget-part-type-viz .axis path {
   display: none;
 }
 
-#budget-part-type-viz .serie {
+svg#budget-part-type-viz .serie {
   opacity: 0.8;
 }
 
-#budget-part-type-viz .legend-color rect {
+svg#budget-part-type-viz .legend-color rect {
   opacity: 0.8;
+}
+
+svg#hr-mission-viz rect {
+  opacity: 0.9;
+}
+
+svg#hr-mission-viz {
+  font-size: 12px;
+  line-height: 14px;
 }
 

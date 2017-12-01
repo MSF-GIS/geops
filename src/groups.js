@@ -1,10 +1,18 @@
 'use strict';
 
-export const typeGroups = {
-  'Hospitals': ['general hosp','surgery hosp'],
-  'Infectious chr deseases': ['HIV','TB','Hep C','unitaid'],
-  'PHC': ['PHC','malaria'],
-  'Other': ['wash','VXS','NCDs','Other']
+export const superTypes = {
+  'general hosp': 'Hospitals',
+  'surgery hosp': 'Hospitals',
+  'HIV': 'Infectious chr deseases',
+  'TB': 'Infectious chr deseases',
+  'Hep C': 'Infectious chr deseases',
+  'unitaid': 'Infectious chr deseases',
+  'PHC': 'PHC',
+  'malaria': 'PHC',
+  'wash': 'Other',
+  'VXS': 'Other',
+  'NCDs': 'Other',
+  'Other': 'Other'
 };
 
 export const contextGroups = {

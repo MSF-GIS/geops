@@ -3,7 +3,7 @@
 const routes = [{
   id: 'home',
   name: 'overview',
-  disabled: true
+  disabled: false
 },{
   id: 'ops',
   name: 'ops',
@@ -15,7 +15,7 @@ const routes = [{
 },{
   id: 'hr',
   name: 'hr',
-  disabled: true  
+  disabled: false 
 },{
   id: 'fin',
   name: 'fin',

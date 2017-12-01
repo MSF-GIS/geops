@@ -1,4 +1,4 @@
-#filter-sidebar-container {
+#accordion-container {
   position: absolute;
   top: 6.1rem;
   height: calc(100vh - 6.6rem);
@@ -7,7 +7,9 @@
   width: 12%;
 }
 
-#accordion-mission, #accordion-project, #accordion-indicator {
+#accordion-mission-item-content,
+#accordion-project-content,
+#accordion-indicator-item-content {
   overflow: auto;
   max-height: 40vh;
   overflow: auto;
@@ -79,5 +81,13 @@ a.mission-link, a.project-link, a.indicator-link {
 
 .accordion-item.disabled .filter-name,
 .accordion-item.disabled .current-filter-item {
+  color: #868e96;
+}
+
+#accordion-year-item fieldset {
+  padding: 0 1rem;
+}
+
+#accordion-year-item .current-filter-item {
   color: #868e96;
 }

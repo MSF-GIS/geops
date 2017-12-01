@@ -1,67 +1,62 @@
 'use strict';
 
-import '../styles/viz.css';
+import '../../styles/viz.css';
 import { select } from 'd3-selection';
 import { scaleBand, scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
-import { parseInteger } from '../util';
-import { defaultChoiceGroups } from '../groups';
-import { DEFAULT_COLOR, CHOICE_COLOR } from '../variables';
 import { axisBottom, axisLeft } from 'd3-axis';
+import PubSub from '../../PubSub';
+import { choiceColors } from '../../variables';
+import { parseInteger } from '../../util';
+import { defaultChoiceGroups } from '../../groups';
 
 const MARGIN_TOP = 60;
 const MARGIN_RIGHT = 30;
 const MARGIN_BOTTOM = 30;
 const MARGIN_LEFT = 40;
 
-let svg = null,
-  g = null,
-  width = null,
-  height = null,
-  x0 = null,
-  x1 = null,
-  y = null,
-  legend = null;
+export default function(model) {
 
-function init(model, handler, ev) {
-  svg = select('svg#budget-part-choice-viz');
-  g = svg.append('g')
+  const svg = select('div#dataviz-container')
+    .append('svg')
+    .attr('width', 300)
+    .attr('height', 500);
+
+  const g = svg.append('g')
       .attr('transform', 'translate(' + MARGIN_LEFT + ',' + MARGIN_TOP + ')');
   
-  width = +svg.attr('width') - MARGIN_LEFT - MARGIN_RIGHT;
-  height = +svg.attr('height') - MARGIN_TOP - MARGIN_BOTTOM;
+  const width = +svg.attr('width') - MARGIN_LEFT - MARGIN_RIGHT;
+  const height = +svg.attr('height') - MARGIN_TOP - MARGIN_BOTTOM;
 
-  x0 = scaleBand()
+  const x0 = scaleBand()
     .rangeRound([0, width])
     .paddingInner(0.1);
 
-  x1 = scaleBand()
+  const x1 = scaleBand()
     .padding(0.05);
 
-  y = scaleLinear()
+  const y = scaleLinear()
     .rangeRound([height, 0]);
 
-  legend = g.append('g')
+  const legend = g.append('g')
     .attr('font-family', 'sans-serif')
     .attr('font-size', 10)
     .attr('text-anchor', 'end')
 
-  update(model, handler);  
-}
+  update(model);  
 
-function update(model, handler) {
-  
-  if(svg !== null) {
-    const keys = Object.keys(defaultChoiceGroups);
-    const group = keys.reduce((acc, curr) => {
-      defaultChoiceGroups[curr].forEach(item => { acc[item] = curr });
-      return acc;
-    }, {});
+  function update(model) {
 
-    const choices = model.projects.reduce((acc, curr) => {
-      const choice = group[curr.choice] || curr.choice;
-      const value = curr.financial.initial + curr.financial.COPRO;
-      const tmpArr = acc.filter(i => i.choice === choice);
+    const keys = ['choice', 'default'];
+
+    const filteredProjects = !model.filters['superChoice'] ? model.projects
+      : model.projects
+        .filter(p => model.filters['superChoice'].indexOf(p.superChoice) < 0 );
+
+    const choices = filteredProjects.reduce((acc, curr) => {
+      const choice = curr.superChoice;
+      const value = (curr.financial.initial + curr.financial.COPRO);
+      const tmpArr = acc.filter(i => i.choice === choice);    
 
       if(tmpArr.length > 0) {
         tmpArr[0].value += value;
@@ -80,8 +75,6 @@ function update(model, handler) {
     const choiceKeys = Object.keys(yearlyData);
     yearlyData.year = 2017;
     const data = [yearlyData];
-
-    const colors = { 'choice': CHOICE_COLOR, 'default': DEFAULT_COLOR };
 
     x0.domain(data.map(d => d.year));
     x1.domain(choiceKeys).rangeRound([0, x0.bandwidth()]);
@@ -103,7 +96,7 @@ function update(model, handler) {
         .attr('y', d => y(d.value))
         .attr('width', x1.bandwidth())
         .attr('height', d => height - y(d.value))
-        .attr('fill', d => colors[d.key])
+        .attr('fill', d => choiceColors[d.key])
         .attr('class', 'bar');
 
     g.append('g')
@@ -134,7 +127,7 @@ function update(model, handler) {
       .attr('x', width + MARGIN_RIGHT - 19)
       .attr('width', 19)
       .attr('height', 19)
-      .attr('fill', d => colors[d]);
+      .attr('fill', d => choiceColors[d]);
 
     rect.append('text')
       .attr('x', width + MARGIN_RIGHT - 24)
@@ -142,10 +135,19 @@ function update(model, handler) {
       .attr('dy', '0.32em')
       .text(d => d);
   }
-}
 
-function destroy() {
-  console.log('destroy');
-}
+  const token = PubSub.subscribe('STATE', (evt, payload) => {
+    switch(payload.key) {
+      case 'filters':
+        // update(payload.appState); not sure we have to do that
+        break;    
+    }
+  });
 
-export default { init, update, destroy };
+  return {
+    destroy: () => {
+      PubSub.unsubscribe(token);
+      svg.remove();
+    }
+  }
+}

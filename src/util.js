@@ -17,7 +17,5 @@ export function parseInteger(string) {
     return 0;
   }
 
-  // console.log(string);
-
   return parseInt(string.replace(/,/g, ''));  
 }

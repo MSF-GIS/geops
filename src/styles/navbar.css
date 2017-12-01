@@ -1,3 +1,4 @@
+
 .bg-dark {
   background-color: rgba(209, 33, 33, 1) !important;
 }
@@ -27,6 +28,11 @@ a.nav-link {
   font-weight: bold;
   font-size: .8rem;
   text-align: center;
+  
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255, 0.9);
 }
 
 a.nav-link.disabled {

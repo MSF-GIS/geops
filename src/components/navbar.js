@@ -21,7 +21,7 @@ function view(model, handler) {
 
   return h('nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top', [
     h('a.navbar-brand', { attrs: { href: '#home' } }, [
-      h('img', { attrs: { src: '/images/gis_logo.png', alt:'GIS logo' } })
+      h('img', { attrs: { src: './images/gis_logo.png', alt:'GIS logo' } })
     ]),
     h('button.navbar-toggler', {
       attrs: {type: 'button', 'aria-controls': 'geops-navbar', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation'}, 

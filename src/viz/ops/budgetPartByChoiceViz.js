@@ -23,7 +23,7 @@ export default function(model) {
     .attr('height', 500);
 
   const g = svg.append('g')
-      .attr('transform', 'translate(' + MARGIN_LEFT + ',' + MARGIN_TOP + ')');
+    .attr('transform', 'translate(' + MARGIN_LEFT + ',' + MARGIN_TOP + ')');
   
   const width = +svg.attr('width') - MARGIN_LEFT - MARGIN_RIGHT;
   const height = +svg.attr('height') - MARGIN_TOP - MARGIN_BOTTOM;

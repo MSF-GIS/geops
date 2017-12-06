@@ -3,7 +3,7 @@
 import PubSub from './PubSub';
 import { GLOBAL_LEVEL, MISSION_LEVEL, PROJECT_LEVEL, ALL_MISSIONS, ALL_PROJECTS } from './variables';
 import { defaultIndicators } from './indicators';
-import { getProjectsFromData, mergeProjectsAndFinancials, getMissions } from './helpers';
+import { getProjectsFromData, mergeProjectsAndFinancials, getMissions, mergeSupplyData } from './helpers';
 
 function reduce(state, action) {
 
@@ -26,7 +26,11 @@ function reduce(state, action) {
       state.projects = tempProjects
         .filter(p => haveCoordination.indexOf(p.mission) > -1)
       state.missions = getMissions(state.projects);
-      state.modalMsg = 'Load countries data ...';
+      state.modalMsg = 'Load supply data ...';
+      return state;
+    case 'SET_SUPPLY':
+      state.missions = mergeSupplyData(state.missions, action.payload);
+      state.modalMsg = 'Load extent data ...';
       return state;
     case 'SET_EXTENTS':
       state.extents = action.payload;

@@ -4,6 +4,12 @@ import PubSub from '../PubSub';
 import budgetPartByTypeViz from './ops/budgetPartByTypeViz';
 import budgetPartByChoiceViz from './ops/budgetPartByChoiceViz';
 import HRbyMissionViz from './hr/HRbyMissionViz';
+import stockByMissionViz from './supply/stockByMissionViz';
+import totalStockViz from './supply/totalStockViz';
+import overStockViz from './supply/overStockViz';
+import intlLocalProcurementViz from './supply/intlLocalProcurementViz';
+import totalProcurementsViz from './supply/totalProcurementsViz';
+import missionIntlForecastViz from './supply/missionIntlForecastViz';
 
 export function init() {
   
@@ -15,6 +21,10 @@ export function init() {
     },
     'hr': {
       'Global Workforce': [HRbyMissionViz]
+    },
+    'supply': {
+      'Stocks': [stockByMissionViz, totalStockViz, overStockViz],
+      'Procurement': [stockByMissionViz, totalProcurementsViz, intlLocalProcurementViz, missionIntlForecastViz]
     }
   }
 

@@ -1,8 +1,6 @@
 
-#dataviz-container {
-  width: 100%;
-  min-height: 20vh;
-  padding: 1rem;
+#dataviz-row {
+  margin-top: 2rem;
 }
 
 svg#budget-part-type-viz .bar {

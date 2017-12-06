@@ -8,16 +8,17 @@ import overview from './pages/overview';
 import ops from './pages/ops';
 import hr from './pages/hr';
 import notFound from './pages/notFound';
+import supply from './pages/supply';
 import webmapping from './webmapping';
 import vizContainer from './vizContainer';
 
 function view(model, handler) {
-  // console.log(model);
 
   const router = {
     'home': overview,
     'ops': ops,
     'hr': hr,
+    'supply': supply,
     '404': notFound
   };
   

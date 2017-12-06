@@ -27,7 +27,7 @@ const routes = [{
 },{
   id: 'supply',
   name: 'supply',
-  disabled: true  
+  disabled: false  
 },{
   id: 'ehealth',
   name: 'e-health',

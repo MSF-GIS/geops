@@ -124,7 +124,7 @@ export function typeContextBudgetCluster(cluster, res) {
     return { attr: key, weight: Math.round((budget / totalBudget) * 1000 ) / 1000 };
   });
 
-  const radius = 15 + (totalBudget / 1000000); // faire un calccul proportionnel à l'aire
+  const radius = 15 + (totalBudget / 1000000);
 
   return getCamenbert(radius, features.length, parts, typeColors);
 }
@@ -174,7 +174,7 @@ export function typeContextCluster(cluster, res) {
     return { attr: key, weight: Math.round((weight / totalFeatures) * 1000 ) / 1000 };
   });
 
-  const radius = 15 + totalFeatures; // faire un calccul proportionnel à l'aire
+  const radius = 15 + totalFeatures;
 
   return getCamenbert(radius, features.length, parts, typeColors);
 }
@@ -224,7 +224,7 @@ export function defaultChoiceCluster(cluster, res) {
     return { attr: key, weight: Math.round((weight / totalFeatures) * 1000 ) / 1000 };
   });
 
-  const radius = 15 + totalFeatures; // faire un calccul proportionnel à l'aire
+  const radius = 15 + totalFeatures;
 
   return getCamenbert(radius, features.length, parts, choiceColors);
 }
@@ -280,7 +280,7 @@ export function defaultChoiceBudgetCluster(cluster, res) {
     return { attr: key, weight: Math.round((budget / totalBudget) * 1000 ) / 1000 };
   });
 
-  const radius = 15 + (totalBudget / 1000000); // faire un calccul proportionnel à l'aire
+  const radius = 15 + (totalBudget / 1000000);
 
   return getCamenbert(radius, features.length, parts, choiceColors); 
 }

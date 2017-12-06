@@ -28,7 +28,6 @@ a.nav-link {
   font-weight: bold;
   font-size: .8rem;
   text-align: center;
-  
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -49,9 +48,9 @@ a.nav-link i.fa {
   align-items: center;
 }
 
-.navbar-expand-lg li.nav-item.active {
+ul.navbar-nav li.active {
   position: relative;
   top: .5rem;
-  background-color: rgba(242, 60, 53);
+  background-color: rgb(242, 60, 53);
   z-index: 9999;
 }

@@ -6,7 +6,7 @@ import { init } from 'snabbdom';
 import h from 'snabbdom/h';
 import PubSub from './PubSub';
 import routes from './routes';
-import { setCurrentTab, setPresences, setProjects, setExtents, setFinancials } from './actions';
+import { setCurrentTab, setPresences, setProjects, setExtents, setFinancials, setSupply } from './actions';
 import app from './components/app';
 import { sendXHR, parseInteger } from './util';
 import { GLOBAL_LEVEL, MISSION_LEVEL, PROJECT_LEVEL, ALL_MISSIONS, ALL_PROJECTS } from './variables';
@@ -41,23 +41,28 @@ function route() {
   PubSub.publish('ACTIONS', setCurrentTab(tempRoutes[0].id));
 }
 
-function manageIO(state, handler) {
+function manageIO(state) {
 
   if(state.loadingData) {
     if(state.projects === null) {
       sendXHR('/data/projects.json', ev => {
         const projectsData = JSON.parse(ev.target.responseText);
-        handler.publish('ACTIONS', setProjects(projectsData));
+        PubSub.publish('ACTIONS', setProjects(projectsData));
       });
     } else if(state.missions === null) {  
       sendXHR('/data/financials.json', ev => {
         const financialsData = JSON.parse(ev.target.responseText);
-        handler.publish('ACTIONS', setFinancials(financialsData));
+        PubSub.publish('ACTIONS', setFinancials(financialsData));
+      });
+    } else if(state.missions[Object.keys(state.missions)[0]].supply == undefined) {  
+      sendXHR('/data/supply.json', ev => {
+        const supplyData = JSON.parse(ev.target.responseText);
+        PubSub.publish('ACTIONS', setSupply(supplyData));
       });
     } else if(state.extents == null) {
       sendXHR('/data/extents.json', ev => {
         const extents = JSON.parse(ev.target.responseText);
-        handler.publish('ACTIONS', setExtents(extents));
+        PubSub.publish('ACTIONS', setExtents(extents));
       });
     }
   }
@@ -67,10 +72,11 @@ function main(initState, initVnode, app) {
   
   const update = function(msg, action) {
     state = AppState.update(state, action);
-    manageIO(state, PubSub);
+    manageIO(state);
     newVnode = app.view(state, PubSub);
     patch(oldVnode, newVnode);
     oldVnode = newVnode;
+    // console.log(state);
   }
 
   let newVnode = null, oldVnode = initVnode;

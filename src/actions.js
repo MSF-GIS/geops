@@ -98,3 +98,10 @@ export function setBudgetDisplay(display) {
     payload: display
   }
 }
+
+export function setSupply(supply) {
+  return {
+    type: 'SET_SUPPLY',
+    payload: supply
+  }
+}

@@ -188,7 +188,7 @@ export default function(appState) {
 
   function handlePopupTemplate(appState) {
     popupTpl = appState.currentMission === ALL_MISSIONS ? popupTpls.missionTpl
-      : popupTpl.projectTpl;
+      : popupTpls.projectTpl;
   }
 
   const token = PubSub.subscribe('STATE', (evt, payload) => {

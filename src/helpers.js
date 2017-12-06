@@ -1,6 +1,6 @@
 'use strict';
 
-import { superTypes, superContexts, superChoices } from './variables';
+import { superTypes, superContexts, superChoices, MISSION_COLORS } from './variables';
 import { typeGroups, contextGroups } from './groups';
 import { parseInteger } from './util';
 
@@ -80,11 +80,12 @@ export function mergeProjectsAndFinancials(projects, financialsData) {
 }
 
 export function getMissions(projects) {
-  return projects.reduce((acc, curr) => {
+  const missions = projects.reduce((acc, curr) => {
     const missionName = curr.mission;
     const mission = acc[missionName] || {
       name: missionName,
       ISO3: curr.ISO3,
+      code: curr.code.split('-')[0],
       IS: 0,
       NS: 0,
       financial: {
@@ -106,4 +107,33 @@ export function getMissions(projects) {
     acc[missionName] = mission;
     return acc;
   }, {});
+
+  Object.keys(missions).forEach((key, index) => {
+    missions[key].color = MISSION_COLORS[index % MISSION_COLORS.length];
+  });
+
+  return missions;
+}
+
+export function mergeSupplyData(missions, supplyData) {
+  const missionsByCode = {}
+  
+  Object.keys(missions).forEach(key => {
+    const m = missions[key];
+    missionsByCode[m.code] = m;    
+  });
+
+  supplyData
+    .filter(supply => missionsByCode[supply['Code Mission'].split('-')[0]] !== undefined)
+    .forEach(supply => {
+      missionsByCode[supply['Code Mission'].split('-')[0]].supply = supply;  
+    });
+
+  Object.keys(missions)
+    .filter(k => missions[k].supply === undefined)
+    .forEach(k => {
+      delete missions[k]
+    });
+
+  return missions;   
 }

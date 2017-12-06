@@ -48,7 +48,7 @@ export function typeFilterItem() {
   elements.unshift(h('div.form-check',[
     h('label.form-check-label',[
       h('input.form-check-input.all', { attrs: { type: 'checkbox', value: 'all', checked: true } }),
-      'Select all'
+      'Select / Deselect all'
     ])      
   ]));
 

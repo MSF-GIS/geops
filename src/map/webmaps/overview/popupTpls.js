@@ -2,7 +2,7 @@
 
 export function missionTpl(props) {
   const budget =  Math.round(props.financial.initial + props.financial.COPRO).toLocaleString('de-DE');
-  const staff = (Math.round((props.NS + props.IS) * 100 ) / 100).toLocaleString('de-DE');
+  const staff = Math.round(props.NS + props.IS).toLocaleString('de-DE');
 
   return `
     <h4> ${props.name} </h4>
@@ -15,7 +15,7 @@ export function missionTpl(props) {
 
 export function projectTpl(props) {
   const budget =  Math.round(props.financial.initial + props.financial.COPRO).toLocaleString('de-DE');
-  const staff = (Math.round((props.NS + props.IS) * 100 ) / 100).toLocaleString('de-DE');
+  const staff = Math.round(props.NS + props.IS).toLocaleString('de-DE');
 
   return `
     <h4> ${props.code} </h4>

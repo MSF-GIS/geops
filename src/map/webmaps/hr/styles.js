@@ -58,7 +58,7 @@ export function missionWorkforceCluster(cluster, res) {
   const totalStaff = feature.get('IS') + feature.get('NS');
   const radius = 8 + (totalStaff / 40);
   const regShape = getWorkforceCamenbert(radius, feature.get('NS'), feature.get('IS'));
-  return new ol.style.Style({ image: regShape });  
+  return new ol.style.Style({ image: regShape });
 }
 
 export function projectWorkforceCluster(cluster, res) {

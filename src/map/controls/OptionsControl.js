@@ -52,10 +52,6 @@ const OptionsControl = function() {
   const this_ = this;
 
   input.addEventListener('change', evt => {
-    /*
-    const event = evt.target.checked ? 'showbudget' : 'hidebudget';
-    this_.dispatchEvent(event);
-    */
     PubSub.publish('ACTIONS', setBudgetDisplay(evt.target.checked));
   });
 

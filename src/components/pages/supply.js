@@ -2,8 +2,9 @@
 
 import h from 'snabbdom/h';
 import { ALL_MISSIONS } from '../../variables';
+import { indicators } from '../../indicators';
+import { accordion, yearItem, missionItem, indicatorItem } from '../accordion';
 import webmapping from '../webmapping';
-import { accordion, yearItem, missionItem } from '../accordion';
 import vizContainer from '../vizContainer';
 
 export default function view(model) {
@@ -11,16 +12,18 @@ export default function view(model) {
   const missionList = [ALL_MISSIONS];
   Object.keys(model.missions)  
     .map(k => model.missions[k].name)
-    .forEach(val => { missionList.push(val); });  
+    .forEach(val => { missionList.push(val); });
 
   const accordionComponent = accordion([
     yearItem(model),
     missionItem(missionList, model.currentMission),
-  ], 'hr');
+    indicatorItem(indicators[model.currentTab], model.currentIndicator)
+  ], 'supply');
 
   return h('div#content', [
     webmapping(model),
     accordionComponent,
     vizContainer()
   ]);
+
 }

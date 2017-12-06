@@ -6,14 +6,6 @@ import ol from 'openlayers/build/ol.custom';
 import { TILE_LYR_GR_TITLE } from '../../variables';
 
 function toPNG(this_) {
-
-  /*
-   * Export simple sous forme de png du canvas correspondant 
-   * à la map. Problème : pas de légénde. Solution à creuser : 
-   * html2canvas (70K de js en plus) sur le div webmap en feintant
-   * pour n'afficher que les contrôles souhaités dans l'export png
-   */
-  
   const map = this_.getMap();    
   map.once('postcompose', function(event) {
   const canvas = event.context.canvas;
@@ -29,14 +21,6 @@ function toPNG(this_) {
 }
 
 function toPDF(this_) {
-
-  /*
-   * Verision simplifiée de la sauvegarde de la carte sous forme de PDF
-   * possibilité de jouer sur la taille de la carte pour sauvegardé en
-   * format standard type A4 et possibilité de modifier la résolution de
-   * la sauvegarde
-   */
-
   const map = this_.getMap(); 
   map.once('postcompose', function(event) {
     const mapSize = map.get('size');

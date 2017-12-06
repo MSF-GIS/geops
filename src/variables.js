@@ -44,11 +44,6 @@ export const superChoices = {
   '#NAME?': 'default'
 }
 
-/*
-export const BUDGET_CHOICE_VIZ_ID = 'budget-choice-viz';
-export const BUDGET_TYPE_VIZ_ID = 'budget-type-viz';
-*/
-
 export const MISSION_COLORS = [
   '#181991', // dark blue
   '#025302', // dark green
@@ -64,6 +59,7 @@ export const MISSION_COLORS = [
   '#A269EF', // light purple
   '#f58db6', // light pink
   '#9E9E9E', // grey
+  '#000000', // black
 ];
 
 export const FILL_COLORS = [
@@ -76,7 +72,7 @@ export const FILL_COLORS = [
   '#e91b86', // pink
   '#367ABD', // blue
   '#56B949', // green
-  '#9E9E9E', // grey,
+  '#9E9E9E', // grey
   '#181991', // dark blue
   '#025302', // dark green
   '#d12121', // MSF red

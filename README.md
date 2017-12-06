@@ -12,7 +12,7 @@ Javascript in this project is written using part of the es6 syntax.
 ### Prerequisites
 Having Node.js and npm installed on your machine.
 ### Installing dependencies
-To install all dependencies, execute `npm -i` command
+To install all dependencies, execute `npm i` command
 ### Starting the project for developement
 To start the project on your local machine (for development), execute `npm run start` command
 ### Making a production build

@@ -45,22 +45,22 @@ function manageIO(state) {
 
   if(state.loadingData) {
     if(state.projects === null) {
-      sendXHR('/data/projects.json', ev => {
+      sendXHR('./data/projects.json', ev => {
         const projectsData = JSON.parse(ev.target.responseText);
         PubSub.publish('ACTIONS', setProjects(projectsData));
       });
     } else if(state.missions === null) {  
-      sendXHR('/data/financials.json', ev => {
+      sendXHR('./data/financials.json', ev => {
         const financialsData = JSON.parse(ev.target.responseText);
         PubSub.publish('ACTIONS', setFinancials(financialsData));
       });
     } else if(state.missions[Object.keys(state.missions)[0]].supply == undefined) {  
-      sendXHR('/data/supply.json', ev => {
+      sendXHR('./data/supply.json', ev => {
         const supplyData = JSON.parse(ev.target.responseText);
         PubSub.publish('ACTIONS', setSupply(supplyData));
       });
     } else if(state.extents == null) {
-      sendXHR('/data/extents.json', ev => {
+      sendXHR('./data/extents.json', ev => {
         const extents = JSON.parse(ev.target.responseText);
         PubSub.publish('ACTIONS', setExtents(extents));
       });

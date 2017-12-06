@@ -63,10 +63,6 @@ export default function(model) {
 
     const ctnrWidth = container.node().getBoundingClientRect().width - 20;
 
-    const scale = scaleLinear()
-      .range([0, width])
-      .domain([0, d3max(allValues)]); 
-
     // Remove last chart 
     svg.remove();
     
